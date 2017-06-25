@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$(window).scrollTop(0);
+
 	var fixmeTop = $('.fixme').offset().top; // get initial position of the element
 	var fifthTop = $('.fifth-service').offset().top - 250; // get initial position of the element
 	var $animation_elements = $('.animation-element');
@@ -64,4 +66,12 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+
+	// Button scroll to form
+	$('[data-scroll-to-form]').click(function(){
+		 $('html, body').animate({
+	        scrollTop: $("#form").offset().top
+	    }, 2000);
+	});
 });

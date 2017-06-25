@@ -12,7 +12,7 @@ html
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
 		script(src="resources/js/scroller.js")
 	body
-		.btn-fixed.button-contact
+		.btn-fixed.button-contact(data-scroll-to-form)
 			span ¡Resuelve hoy tus problemas de limpieza!
 		#main-content.container-fluid
 			.principal.row
@@ -83,7 +83,7 @@ html
 						span (afanadoras)
 					p.subtitle.
 						Lo más importante de tu negocio u oficina es la primera impresión que se llevan tus clientes  y socios, permítenos ser parte de un plan personalizado de limpieza diaria para que todos los días  luzca impecable.
-				.btn-fixed-2.button-contact
+				.btn-fixed-2.button-contact(data-scroll-to-form)
 					span ¡Resuelve hoy tus problemas de limpieza!
 			.we-love.row
 				img.img-responsive.love(src='resources/imgs/we-love-what-we-do.png')
@@ -95,28 +95,28 @@ html
 					span.background2 tu mejor opción? 
 					span.main ¿Por qué somos tu mejor opción?
 			.options.row
-				.option.col-xs-12.col-sm-6.col-sm-3
+				.option.col-xs-12.col-sm-6.col-lg-3
 					img(src="resources/imgs/option-1.png")
 					h4.title Servicio Personalizado
 					p.text.
 						Nuestros clientes son lo más importante y los atendemos personalmente, desde quien recibe el primer contacto hasta la dirigencia están disponibles en todo momento.
-				.option.col-xs-12.col-sm-6.col-sm-3
+				.option.col-xs-12.col-sm-6.col-lg-3
 					img(src="resources/imgs/option-2.png")
 					h4.title Atención Garantizada
 					p.text.
 						Sabemos el compromiso que adquirimos al ofrecer nuestros servicios es por eso que contamos con el mejor equipo humano y material para llevar acabo todos nuestros servicios. Siempre buscando satisfacción 5 estrellas.
-				.option.col-xs-12.col-sm-6.col-sm-3
+				.option.col-xs-12.col-sm-6.col-lg-3
 					img(src="resources/imgs/option-3.png")
 					h4.title Empleos Formales
 					p.text.
 						Dado que nuestro negocio se basa en nuestros colaboradores, les brindamos las condiciones laborales ideales y apegadas a la ley para garantizar un colaborador feliz y fiel a los valores de la empresa.
-				.option.col-xs-12.col-sm-6.col-sm-3
+				.option.col-xs-12.col-sm-6.col-lg-3
 					img(src="resources/imgs/option-4.png")
 					h4.title Facturamos tus Servicios
 					p.text.
 						Déjanos ayudarte a que los servicios de limpieza dejen de ser solo un gasto y puedas recibir una factura para deducibilidad.
 				.button.col-xs-12
-					.button-contact-2
+					.button-contact-2(data-scroll-to-form)
 						span ¡Resuelve hoy tus problemas de limpieza!
 			.opinions.row
 				img.img-bg-opinions(src="resources/imgs/img-bg-opinions.png")
@@ -156,25 +156,36 @@ html
 					span.background2 atenderte 
 					span.main Estamos para atenderte
 			.form-body.row
-				.col-xs-12.col-md-6
-					input(type="text")
-				.col-xs-12.col-md-6
-					input(type="text")
-				.col-xs-12.col-md-6
-					input(type="text")
-				.col-xs-12.col-md-6
-					input(type="text")
-				.col-xs-12
-					input(type="text")
+				.form-input.col-xs-12.col-md-6
+					label(for="in-name") Nombre
+					input#in-name(type="text" placeholder="Ej. Juan Pérez")
+				.form-input.col-xs-12.col-md-6
+					label(for="in-email") Correo Electrónico
+					input#in-email(type="email" placeholder="Ej. juan@liv.com")
+				.form-input.col-xs-12.col-md-6
+					label(for="in-phone") Teléfono
+					input#in-phone(type="text" placeholder="Ej. 33 1417 1089")
+				.form-input.col-xs-12.col-md-6
+					label(for="in-service") Servicio
+					select#in-service
+						option(value="") Selecciona un servicio
+				.form-input.col-xs-12
+					label(for="in-query") ¿Qué podemos hacer por ti?
+					textarea#in-query
 			.form-button.row
 				.button-contact-2
 						span Enviar mensaje
 			.final.row
 				.number
+					img.whatsapp(src='resources/imgs/whatsapp-white-2.png')
 					span 33 1417 1084
-				.text Mandanos un Whatsapp y dejanos atenderte de inmediato
+				.text Mándanos un Whatsapp y déjanos atenderte de inmediato
 				.logo
+					img(src="resources/imgs/Logo-Liv-blu.png")
 				.facebook
+					img(src="resources/imgs/facebook.png")
 				.copyright ©Limpieza Integral Vazquez 2017
 				.img-1
+					img(src="resources/imgs/final-left.png")
 				.img-2
+					img(src="resources/imgs/final-right.png")

@@ -12,7 +12,7 @@
     <script src="resources/js/scroller.js"></script>
   </head>
   <body>
-    <div class="btn-fixed button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
+    <div data-scroll-to-form="data-scroll-to-form" class="btn-fixed button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
     <div id="main-content" class="container-fluid">
       <div class="principal row">
         <div class="left col-xs-12 col-sm-6">
@@ -68,7 +68,7 @@
           <h3 class="main-title">Servicio subcontratado de aseo diario <span>(afanadoras)</span></h3>
           <p class="subtitle">Lo más importante de tu negocio u oficina es la primera impresión que se llevan tus clientes  y socios, permítenos ser parte de un plan personalizado de limpieza diaria para que todos los días  luzca impecable.</p>
         </div>
-        <div class="btn-fixed-2 button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
+        <div data-scroll-to-form="data-scroll-to-form" class="btn-fixed-2 button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
       </div>
       <div class="we-love row"><img src="resources/imgs/we-love-what-we-do.png" class="img-responsive love"/>
         <p class="title">Amamos</p>
@@ -78,24 +78,24 @@
         <h2 class="col-xs-12"><span class="background">¿Por qué somos </span><span class="background2">tu mejor opción? </span><span class="main">¿Por qué somos tu mejor opción?</span></h2>
       </div>
       <div class="options row">
-        <div class="option col-xs-12 col-sm-6 col-sm-3"><img src="resources/imgs/option-1.png"/>
+        <div class="option col-xs-12 col-sm-6 col-lg-3"><img src="resources/imgs/option-1.png"/>
           <h4 class="title">Servicio Personalizado</h4>
           <p class="text">Nuestros clientes son lo más importante y los atendemos personalmente, desde quien recibe el primer contacto hasta la dirigencia están disponibles en todo momento.</p>
         </div>
-        <div class="option col-xs-12 col-sm-6 col-sm-3"><img src="resources/imgs/option-2.png"/>
+        <div class="option col-xs-12 col-sm-6 col-lg-3"><img src="resources/imgs/option-2.png"/>
           <h4 class="title">Atención Garantizada</h4>
           <p class="text">Sabemos el compromiso que adquirimos al ofrecer nuestros servicios es por eso que contamos con el mejor equipo humano y material para llevar acabo todos nuestros servicios. Siempre buscando satisfacción 5 estrellas.</p>
         </div>
-        <div class="option col-xs-12 col-sm-6 col-sm-3"><img src="resources/imgs/option-3.png"/>
+        <div class="option col-xs-12 col-sm-6 col-lg-3"><img src="resources/imgs/option-3.png"/>
           <h4 class="title">Empleos Formales</h4>
           <p class="text">Dado que nuestro negocio se basa en nuestros colaboradores, les brindamos las condiciones laborales ideales y apegadas a la ley para garantizar un colaborador feliz y fiel a los valores de la empresa.</p>
         </div>
-        <div class="option col-xs-12 col-sm-6 col-sm-3"><img src="resources/imgs/option-4.png"/>
+        <div class="option col-xs-12 col-sm-6 col-lg-3"><img src="resources/imgs/option-4.png"/>
           <h4 class="title">Facturamos tus Servicios</h4>
           <p class="text">Déjanos ayudarte a que los servicios de limpieza dejen de ser solo un gasto y puedas recibir una factura para deducibilidad.</p>
         </div>
         <div class="button col-xs-12">
-          <div class="button-contact-2"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
+          <div data-scroll-to-form="data-scroll-to-form" class="button-contact-2"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
         </div>
       </div>
       <div class="opinions row"><img src="resources/imgs/img-bg-opinions.png" class="img-bg-opinions"/>
@@ -128,33 +128,40 @@
         <h2 class="col-xs-12"><span class="background">Estamos para</span><span class="background2">atenderte </span><span class="main">Estamos para atenderte</span></h2>
       </div>
       <div class="form-body row">
-        <div class="col-xs-12 col-md-6">
-          <input type="text"/>
+        <div class="form-input col-xs-12 col-md-6">
+          <label for="in-name">Nombre</label>
+          <input id="in-name" type="text" placeholder="Ej. Juan Pérez"/>
         </div>
-        <div class="col-xs-12 col-md-6">
-          <input type="text"/>
+        <div class="form-input col-xs-12 col-md-6">
+          <label for="in-email">Correo Electrónico</label>
+          <input id="in-email" type="email" placeholder="Ej. juan@liv.com"/>
         </div>
-        <div class="col-xs-12 col-md-6">
-          <input type="text"/>
+        <div class="form-input col-xs-12 col-md-6">
+          <label for="in-phone">Teléfono</label>
+          <input id="in-phone" type="text" placeholder="Ej. 33 1417 1089"/>
         </div>
-        <div class="col-xs-12 col-md-6">
-          <input type="text"/>
+        <div class="form-input col-xs-12 col-md-6">
+          <label for="in-service">Servicio</label>
+          <select id="in-service">
+            <option value="">Selecciona un servicio</option>
+          </select>
         </div>
-        <div class="col-xs-12">
-          <input type="text"/>
+        <div class="form-input col-xs-12">
+          <label for="in-query">¿Qué podemos hacer por ti?</label>
+          <textarea id="in-query"></textarea>
         </div>
       </div>
       <div class="form-button row">
         <div class="button-contact-2"><span>Enviar mensaje</span></div>
       </div>
       <div class="final row">
-        <div class="number"><span>33 1417 1084</span></div>
-        <div class="text">Mandanos un Whatsapp y dejanos atenderte de inmediato</div>
-        <div class="logo"></div>
-        <div class="facebook"></div>
+        <div class="number"><img src="resources/imgs/whatsapp-white-2.png" class="whatsapp"/><span>33 1417 1084</span></div>
+        <div class="text">Mándanos un Whatsapp y déjanos atenderte de inmediato</div>
+        <div class="logo"><img src="resources/imgs/Logo-Liv-blu.png"/></div>
+        <div class="facebook"><img src="resources/imgs/facebook.png"/></div>
         <div class="copyright">©Limpieza Integral Vazquez 2017</div>
-        <div class="img-1"></div>
-        <div class="img-2"></div>
+        <div class="img-1"><img src="resources/imgs/final-left.png"/></div>
+        <div class="img-2"><img src="resources/imgs/final-right.png"/></div>
       </div>
     </div>
   </body>
