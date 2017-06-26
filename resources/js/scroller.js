@@ -100,6 +100,16 @@ $(document).ready(function() {
 			$.post("send.php", q, function(data) {
 				console.log(data);
 				$('.layout-wait').css('display', 'none');
+				$('.layout-success').css('display', 'block');
+
+				setTimeout(function() {
+					for (var key in q) {
+						if (q.hasOwnProperty(key)) {
+							$('#in-' + key).val('');
+						}
+					}
+					$('.layout-success').css('display', 'none');
+				}, 3000);
 			});
 		}
 

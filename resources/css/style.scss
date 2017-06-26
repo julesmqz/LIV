@@ -7,7 +7,7 @@ body{
 	font-family: 'Helvetica' Arial, sans-serif;
 }
 
-.layout-wait{
+.layout-wait,.layout-success{
 	position:absolute;
 	width:100%;
 	height:100%;
@@ -16,6 +16,10 @@ body{
 	opacity: 0.65;
     z-index: 60;
     display:none;
+}
+.layout-success{
+	font-family: 'Raleway', sans-serif;
+	background-color: $first-bg-color;
 }
 
 .button-contact,.button-contact-2{
