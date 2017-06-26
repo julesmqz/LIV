@@ -2,6 +2,16 @@ body {
   overflow-x: hidden;
   font-family: 'Helvetica' Arial, sans-serif; }
 
+.layout-wait {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  opacity: 0.2;
+  opacity: 0.65;
+  z-index: 60;
+  display: none; }
+
 .button-contact, .button-contact-2 {
   background: url("../imgs/contact-button.png");
   text-transform: uppercase;
@@ -447,6 +457,8 @@ body {
     height: 50px;
     padding: 10px;
     font-size: 20px; }
+    #main-content .form-body .form-input select.error, #main-content .form-body .form-input input.error, #main-content .form-body .form-input textarea.error {
+      border-color: red; }
   #main-content .form-body .form-input textarea {
     min-height: 200px; }
 #main-content .form-button {
@@ -455,7 +467,8 @@ body {
     text-align: center; }
     #main-content .form-button .button-contact-2 span {
       width: 80%;
-      font-size: 20px; }
+      font-size: 20px;
+      top: 20px; }
 #main-content .final {
   height: 100vh;
   text-align: center;

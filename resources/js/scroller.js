@@ -6,12 +6,12 @@ $(document).ready(function() {
 	var $animation_elements = $('.animation-element');
 	var $window = $(window);
 
-	$(window).on('resize',function(){
+	$(window).on('resize', function() {
 		fixmeTop = $('.fixme').offset().top; // get initial position of the element
 		fifthTop = $('.fifth-service').offset().top - 250;
 	});
 
-	$(window).on('scroll resize',function() { // assign scroll event listener
+	$(window).on('scroll resize', function() { // assign scroll event listener
 
 		var currentScroll = $(window).scrollTop(); // get current position
 		var currentScrollB = $(window).scrollTop(); // get current position
@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 	function check_if_in_view() {
 		var currentScroll = $(window).scrollTop();
-		
+
 
 		$.each($animation_elements, function() {
 			var $element = $(this);
@@ -69,9 +69,39 @@ $(document).ready(function() {
 
 
 	// Button scroll to form
-	$('[data-scroll-to-form]').click(function(){
-		 $('html, body').animate({
-	        scrollTop: $("#form").offset().top
-	    }, 2000);
+	$('[data-scroll-to-form]').click(function() {
+		$('html, body').animate({
+			scrollTop: $("#form").offset().top
+		}, 2000);
+	});
+
+	$('[data-send-form]').click(function() {
+
+		var q = {
+			'name': $('#in-name').val(),
+			'email': $('#in-email').val(),
+			'phone': $('#in-phone').val(),
+			'service': $('#in-service').val(),
+			'query': $('#in-query').val(),
+		}
+		var error = false;
+		for (var key in q) {
+			if (q.hasOwnProperty(key)) {
+				$('#in-' + key).removeClass('error');
+				if (q[key] == '' || q[key] == undefined) {
+					$('#in-' + key).addClass('error');
+					error = true;
+				}
+			}
+		}
+
+		if (!error) {
+			$('.layout-wait').css('display', 'block');
+			$.post("send.php", q, function(data) {
+				console.log(data);
+				$('.layout-wait').css('display', 'none');
+			});
+		}
+
 	});
 });

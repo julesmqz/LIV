@@ -156,6 +156,7 @@ html
 					span.background2 atenderte 
 					span.main Estamos para atenderte
 			.form-body.row
+				.layout-wait
 				.form-input.col-xs-12.col-md-6
 					label(for="in-name") Nombre
 					input#in-name(type="text" placeholder="Ej. Juan Pérez")
@@ -169,11 +170,17 @@ html
 					label(for="in-service") Servicio
 					select#in-service
 						option(value="") Selecciona un servicio
+						option(value="1") Lavado de Muebles y Tapicerias
+						option(value="2") Pulido, Encerado y Cristalizado de pisos
+						option(value="3") Limpieza general
+						option(value="4") Terminación de obra
+						option(value="5") Servicio subcontratado de aseo diario 
 				.form-input.col-xs-12
 					label(for="in-query") ¿Qué podemos hacer por ti?
 					textarea#in-query
 			.form-button.row
-				.button-contact-2
+				.layout-wait
+				.button-contact-2(data-send-form)
 						span Enviar mensaje
 			.final.row
 				.number
