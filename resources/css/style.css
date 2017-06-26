@@ -14,7 +14,11 @@ body {
 
 .layout-success {
   font-family: 'Raleway', sans-serif;
-  background-color: #1ccfc9; }
+  background-color: #1ccfc9;
+  opacity: 1;
+  color: white; }
+  .layout-success p {
+    font-size: 60px; }
 
 .button-contact, .button-contact-2 {
   background: url("../imgs/contact-button.png");

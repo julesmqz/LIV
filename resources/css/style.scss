@@ -20,6 +20,11 @@ body{
 .layout-success{
 	font-family: 'Raleway', sans-serif;
 	background-color: $first-bg-color;
+	opacity:1;
+	color:white;
+	p{
+		font-size:60px;
+	}
 }
 
 .button-contact,.button-contact-2{
