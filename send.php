@@ -7,10 +7,10 @@ $req_service = $_POST('service');
 $req_query = $_POST('query');
 
 
-$services = array("Lavado de Muebles y Tapicerias"
-"Pulido, Encerado y Cristalizado de pisos"
-"Limpieza general"
-"Terminación de obra"
+$services = array("Lavado de Muebles y Tapicerias",
+"Pulido, Encerado y Cristalizado de pisos",
+"Limpieza general",
+"Terminación de obra",
 "Servicio subcontratado de aseo diario");
 
 
