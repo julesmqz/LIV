@@ -184,6 +184,7 @@ body{
 				position: absolute;
 			    bottom: 0;
 			    left: -50px;
+			    max-height:500px;
 			}
 		}
 	}
@@ -719,7 +720,7 @@ body{
 	#main-content{
 		.we-love{
 			.subtitle{
-				left: 85px !important;
+				left: 85px;
 			}
 		}
 
@@ -798,6 +799,49 @@ body{
 				left:0;
 				position:relative;
 				margin:auto;
+			}
+		}
+	}
+}
+
+@media (max-width: 932px) {
+
+	#main-content{
+		.form-title{
+			h2{
+				.background,.background2{
+					font-size: 100px;
+				}
+			}
+		}
+		.our-services{
+			h2{
+				.background,.background2{
+					left:19.5%;
+				}
+				&.added-space{
+					.background,.background2{
+						left:19.5%;
+					}
+				}
+			}
+		}
+		.why-us{
+			h2{
+				.background,.background2{
+					font-size: 75px;
+				}
+			}
+		}
+		.we-love{
+			.title{
+				font-size:100px;
+				top:10px;
+			}
+			.subtitle{
+				font-size:80px;
+				top:140px;
+				left: 85px;
 			}
 		}
 	}

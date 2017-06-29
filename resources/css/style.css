@@ -156,7 +156,8 @@ body {
     #main-content .principal .right img.main {
       position: absolute;
       bottom: 0;
-      left: -50px; }
+      left: -50px;
+      max-height: 500px; }
 #main-content .our-services, #main-content .why-us, #main-content .form-title {
   height: 250px;
   width: 100%; }
@@ -535,7 +536,7 @@ body {
 
 @media (max-width: 1217px) {
   #main-content .we-love .subtitle {
-    left: 85px !important; }
+    left: 85px; }
   #main-content .final .img-1, #main-content .final .img-2 {
     width: 30%; } }
 /* Small devices (tablets, 768px and up) */
@@ -579,6 +580,22 @@ body {
     left: 0;
     position: relative;
     margin: auto; } }
+@media (max-width: 932px) {
+  #main-content .form-title h2 .background, #main-content .form-title h2 .background2 {
+    font-size: 100px; }
+  #main-content .our-services h2 .background, #main-content .our-services h2 .background2 {
+    left: 19.5%; }
+  #main-content .our-services h2.added-space .background, #main-content .our-services h2.added-space .background2 {
+    left: 19.5%; }
+  #main-content .why-us h2 .background, #main-content .why-us h2 .background2 {
+    font-size: 75px; }
+  #main-content .we-love .title {
+    font-size: 100px;
+    top: 10px; }
+  #main-content .we-love .subtitle {
+    font-size: 80px;
+    top: 140px;
+    left: 85px; } }
 /* @media (min-width: 900px) and (max-width: 1050px) {
 	#main-content{
 		.principal{
