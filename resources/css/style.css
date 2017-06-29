@@ -110,9 +110,7 @@ body {
     height: 100vh; }
     #main-content .principal .left .txt {
       color: white;
-      position: absolute;
-      top: 4%;
-      left: 30%;
+      margin: auto;
       width: 300px;
       text-align: right; }
       #main-content .principal .left .txt .title {
@@ -139,7 +137,8 @@ body {
       left: 99%;
       top: 0; }
   #main-content .principal .right {
-    padding: 0; }
+    padding: 0;
+    height: 100vh; }
     #main-content .principal .right .quote {
       color: #575858;
       position: absolute;
@@ -157,18 +156,16 @@ body {
     #main-content .principal .right img.main {
       position: absolute;
       bottom: 0;
-      top: 20vh;
-      left: -50px;
-      height: 80vh; }
+      left: -50px; }
 #main-content .our-services, #main-content .why-us, #main-content .form-title {
-  height: 225px;
+  height: 250px;
   width: 100%; }
   #main-content .our-services h2, #main-content .why-us h2, #main-content .form-title h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 100px;
     color: #1ccfc9;
     text-align: center;
-    line-height: 225px;
+    line-height: 250px;
     margin: 0;
     padding: 0;
     font-style: italic; }
@@ -190,7 +187,7 @@ body {
       top: 2px;
       left: 19%; }
   #main-content .our-services.added-space ~ .first-service, #main-content .why-us.added-space ~ .first-service, #main-content .form-title.added-space ~ .first-service {
-    margin-top: 225px; }
+    margin-top: 250px; }
   #main-content .our-services.added-space .background, #main-content .why-us.added-space .background, #main-content .form-title.added-space .background {
     left: 19.5%; }
 #main-content .why-us {
@@ -220,22 +217,22 @@ body {
   #main-content .form-title h2 .background2 {
     top: 100px; }
 #main-content .first-service, #main-content .third-service, #main-content .fifth-service {
-  margin: 0 50px;
-  padding-bottom: 50px; }
+  margin: 0 auto;
+  padding-bottom: 50px;
+  max-width: 1400px; }
   #main-content .first-service .left, #main-content .third-service .left, #main-content .fifth-service .left {
     padding: 0;
     background: #1ccfc9;
     box-shadow: 0 1px 0 0 #b8bfbf, 0 5px 6px 5px rgba(0, 0, 0, 0.03);
-    height: calc(100vh - 225px - 50px);
+    height: calc(100vh - 250px - 50px);
     position: relative;
     z-index: 10; }
     #main-content .first-service .left img.service, #main-content .third-service .left img.service, #main-content .fifth-service .left img.service {
       position: absolute;
       bottom: 5vh;
-      left: -50px;
-      height: calc(98vh - 225px - 50px); }
+      left: -50px; }
     #main-content .first-service .left img.vertical-texture, #main-content .third-service .left img.vertical-texture, #main-content .fifth-service .left img.vertical-texture {
-      height: calc(100vh - 225px - 50px);
+      height: calc(100vh - 250px - 50px);
       position: absolute;
       left: 99%;
       top: 0; }
@@ -243,95 +240,93 @@ body {
     background: #f7f8f9;
     border: 1px solid #d7dddd;
     box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.04);
-    height: calc(100vh - 225px - 50px);
+    height: calc(100vh - 250px - 50px);
     position: relative; }
-    #main-content .first-service .right .title, #main-content .third-service .right .title, #main-content .fifth-service .right .title {
+    #main-content .first-service .right .txt .title, #main-content .third-service .right .txt .title, #main-content .fifth-service .right .txt .title {
       font-size: 24px;
       color: #575858;
       line-height: 34px;
       top: 37px; }
-    #main-content .first-service .right .main-title, #main-content .third-service .right .main-title, #main-content .fifth-service .right .main-title {
+    #main-content .first-service .right .txt .main-title, #main-content .third-service .right .txt .main-title, #main-content .fifth-service .right .txt .main-title {
       font-size: 64px;
       color: #ff9012;
       line-height: 70px;
       font-weight: lighter;
       top: 70px; }
-    #main-content .first-service .right .subtitle, #main-content .third-service .right .subtitle, #main-content .fifth-service .right .subtitle {
+    #main-content .first-service .right .txt .subtitle, #main-content .third-service .right .txt .subtitle, #main-content .fifth-service .right .txt .subtitle {
       font-size: 16px;
       color: #8a8c8c;
       text-align: justify;
       top: 256px; }
-    #main-content .first-service .right .title, #main-content .first-service .right .subtitle, #main-content .first-service .right .main-title, #main-content .third-service .right .title, #main-content .third-service .right .subtitle, #main-content .third-service .right .main-title, #main-content .fifth-service .right .title, #main-content .fifth-service .right .subtitle, #main-content .fifth-service .right .main-title {
-      position: absolute;
-      left: 150px;
-      right: 44px; }
+    #main-content .first-service .right .txt .title, #main-content .first-service .right .txt .subtitle, #main-content .first-service .right .txt .main-title, #main-content .third-service .right .txt .title, #main-content .third-service .right .txt .subtitle, #main-content .third-service .right .txt .main-title, #main-content .fifth-service .right .txt .title, #main-content .fifth-service .right .txt .subtitle, #main-content .fifth-service .right .txt .main-title {
+      width: 90%;
+      padding-left: 20%;
+      margin-top: 10%; }
 #main-content .second-service, #main-content .fourth-service {
-  margin: 0 50px;
-  padding-bottom: 50px; }
+  margin: 0 auto;
+  padding-bottom: 50px;
+  max-width: 1400px; }
   #main-content .second-service .left, #main-content .fourth-service .left {
     background: #f7f8f9;
     border: 1px solid #d7dddd;
     box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.04);
-    height: calc(100vh - 225px - 50px);
+    height: calc(100vh - 250px - 50px);
     position: relative; }
-    #main-content .second-service .left .title, #main-content .fourth-service .left .title {
+    #main-content .second-service .left .txt .title, #main-content .fourth-service .left .txt .title {
       font-size: 24px;
       color: #575858;
       line-height: 34px;
       top: 37px; }
-    #main-content .second-service .left .main-title, #main-content .fourth-service .left .main-title {
+    #main-content .second-service .left .txt .main-title, #main-content .fourth-service .left .txt .main-title {
       font-size: 64px;
       color: #ff9012;
       line-height: 70px;
       font-weight: lighter;
       top: 70px; }
-    #main-content .second-service .left .subtitle, #main-content .fourth-service .left .subtitle {
+    #main-content .second-service .left .txt .subtitle, #main-content .fourth-service .left .txt .subtitle {
       font-size: 16px;
       color: #8a8c8c;
       text-align: justify;
       top: 256px; }
-    #main-content .second-service .left .title, #main-content .second-service .left .subtitle, #main-content .second-service .left .main-title, #main-content .fourth-service .left .title, #main-content .fourth-service .left .subtitle, #main-content .fourth-service .left .main-title {
-      position: absolute;
-      left: 44px;
-      right: 149px; }
+    #main-content .second-service .left .txt .title, #main-content .second-service .left .txt .subtitle, #main-content .second-service .left .txt .main-title, #main-content .fourth-service .left .txt .title, #main-content .fourth-service .left .txt .subtitle, #main-content .fourth-service .left .txt .main-title {
+      width: 90%;
+      padding-right: 20%;
+      margin-top: 10%; }
   #main-content .second-service .right, #main-content .fourth-service .right {
     padding: 0;
     background: #ff9012;
     box-shadow: 0 1px 0 0 #b8bfbf, 0 5px 6px 5px rgba(0, 0, 0, 0.03);
-    height: calc(100vh - 225px - 50px);
+    height: calc(100vh - 250px - 50px);
     position: relative;
     z-index: 10; }
     #main-content .second-service .right img.service, #main-content .fourth-service .right img.service {
       position: absolute;
       bottom: -1vh;
-      left: -36px;
-      height: calc(108vh - 225px - 50px); }
+      left: -36px; }
     #main-content .second-service .right img.vertical-texture, #main-content .fourth-service .right img.vertical-texture {
-      height: calc(100vh - 225px - 50px);
+      height: calc(100vh - 250px - 50px);
       position: absolute;
-      left: -68px;
+      right: 99%;
       top: 0; }
 #main-content .second-service, #main-content .third-service, #main-content .fourth-service, #main-content .fifth-service {
-  margin-top: 225px; }
-#main-content .third-service .right .main-title, #main-content .third-service .left .main-title, #main-content .fourth-service .right .main-title, #main-content .fourth-service .left .main-title {
+  margin-top: 250px; }
+#main-content .third-service .right .txt .main-title, #main-content .third-service .left .txt .main-title, #main-content .fourth-service .right .txt .main-title, #main-content .fourth-service .left .txt .main-title {
   top: 125px; }
-#main-content .third-service .right .subtitle, #main-content .third-service .left .subtitle, #main-content .fourth-service .right .subtitle, #main-content .fourth-service .left .subtitle {
+#main-content .third-service .right .txt .subtitle, #main-content .third-service .left .txt .subtitle, #main-content .fourth-service .right .txt .subtitle, #main-content .fourth-service .left .txt .subtitle {
   top: 250px; }
 #main-content .third-service .left img.service {
   left: -65px;
-  bottom: -20px;
-  height: calc(110vh - 225px - 50px); }
+  bottom: -20px; }
 #main-content .fourth-service .right img.service {
   left: 30%; }
 #main-content .fifth-service {
   position: relative; }
   #main-content .fifth-service .left img.service {
     bottom: -7vh;
-    left: 0px;
-    height: calc(115vh - 225px - 50px); }
-  #main-content .fifth-service .right .main-title, #main-content .fifth-service .right .title, #main-content .fifth-service .right .subtitle {
+    left: 0px; }
+  #main-content .fifth-service .right .txt .main-title, #main-content .fifth-service .right .txt .title, #main-content .fifth-service .right .txt .subtitle {
     left: 100px; }
-    #main-content .fifth-service .right .main-title span, #main-content .fifth-service .right .title span, #main-content .fifth-service .right .subtitle span {
+    #main-content .fifth-service .right .txt .main-title span, #main-content .fifth-service .right .txt .title span, #main-content .fifth-service .right .txt .subtitle span {
       font-size: 40px; }
   #main-content .fifth-service .btn-fixed-2 {
     position: absolute;
@@ -519,42 +514,105 @@ body {
     bottom: 0;
     right: 0; }
 
-@media (min-width: 900px) and (max-width: 1050px) {
-  #main-content .principal .left .txt {
-    left: 15%;
-    width: 250px; }
-  #main-content .principal .right img.main {
-    height: 70vh;
-    top: 30vh; }
-  #main-content .our-services h2 .background {
-    left: 10%; }
-  #main-content .our-services.added-space .background {
-    left: 10%; }
-  #main-content .first-service .right .main-title, #main-content .third-service .right .main-title, #main-content .fifth-service .right .main-title {
-    font-size: 40px;
-    line-height: 50px;
-    margin-top: 50px; }
-  #main-content .first-service .left img.service, #main-content .third-service .left img.service, #main-content .fifth-service .left img.service {
-    height: calc(95vh - 225px - 50px); }
-  #main-content .third-service .right .main-title {
-    margin-top: 30px; }
-  #main-content .fifth-service .right .main-title {
-    font-size: 35px; }
-  #main-content .second-service .left .main-title, #main-content .fourth-service .left .main-title {
-    font-size: 35px;
-    line-height: 50px;
-    margin-top: 50px; }
-  #main-content .second-service .right img.service, #main-content .fourth-service .right img.service {
-    height: calc(95vh - 225px - 50px); }
-  #main-content .fourth-service .left .main-title {
-    margin-top: 30px; }
-  #main-content .we-love .title {
-    font-size: 120px; }
-  #main-content .we-love .subtitle {
-    font-size: 70px;
-    left: 300px; }
-  #main-content .why-us h2 .main {
-    font-size: 55px; } }
+/* @media (min-width: 900px) and (max-width: 1050px) {
+	#main-content{
+		.principal{
+			.left{
+				.txt{
+					left:15%;
+					width:250px;
+				}
+			}
+			.right{
+				img.main{
+					height:70vh;
+					top:30vh;
+				}
+			}
+		}
+		.our-services{
+			h2{
+				.background{
+					left:10%;
+
+				}
+			}
+			&.added-space{
+				.background{
+					left:10%;
+				}
+			}
+		}
+		.first-service,.third-service,.fifth-service{
+			.right{
+				.main-title{
+					font-size:40px;
+					line-height: 50px;
+    				margin-top: 50px;
+				}
+			}
+			.left{
+				img.service{
+					height: calc(95vh - 225px - 50px);
+				}
+			}
+		}
+		.third-service{
+			.right{
+				.main-title{
+					margin-top: 30px;
+				}
+			}
+		}
+		.fifth-service{
+			.right{
+				.main-title{
+					font-size:35px;
+				}
+			}
+		}
+		.second-service,.fourth-service{
+			.left{
+				.main-title{
+					font-size:35px;
+					line-height: 50px;
+    				margin-top: 50px;
+				}
+			}
+			.right{
+				img.service{
+					height: calc(95vh - 225px - 50px);
+				}
+			}
+		}
+
+		.fourth-service{
+			.left{
+				.main-title{
+					margin-top: 30px;
+				}
+			}
+		}
+
+		.we-love{
+			.title{
+				font-size: 120px;
+			}
+			.subtitle{
+				font-size: 70px;
+    			left: 300px;
+			}
+		}
+
+		.why-us{
+			h2{
+				.main{
+					font-size: 55px;
+				}
+			}
+		}
+	}
+} */
 /* Medium devices (desktops, 992px and up) */
 
 /*# sourceMappingURL=style.css.map */
