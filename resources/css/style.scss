@@ -177,14 +177,13 @@ body{
 			    }
 			    .whatsapp{
 			    	margin-top: -16px;
-						margin-right: 10px;
+					margin-right: 10px;
 			    }
 			}
 			img.main{
 				position: absolute;
 			    bottom: 0;
 			    left: -50px;
-			    max-height:500px;
 			}
 		}
 	}
@@ -394,6 +393,8 @@ body{
 	}
 	.first-service,.second-service,.third-service,.fourth-service,.fifth-service{
 		.left,.right{
+			min-height: 400px;
+			height:400px;
 			.hidden-bg{
 				    height: 100%;
 				    width: 100%;

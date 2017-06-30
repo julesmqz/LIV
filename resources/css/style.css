@@ -156,8 +156,7 @@ body {
     #main-content .principal .right img.main {
       position: absolute;
       bottom: 0;
-      left: -50px;
-      max-height: 500px; }
+      left: -50px; }
 #main-content .our-services, #main-content .why-us, #main-content .form-title {
   height: 250px;
   width: 100%; }
@@ -318,11 +317,14 @@ body {
       right: 99%;
       top: 0;
       max-width: 90px; }
-#main-content .first-service .left .hidden-bg, #main-content .first-service .right .hidden-bg, #main-content .second-service .left .hidden-bg, #main-content .second-service .right .hidden-bg, #main-content .third-service .left .hidden-bg, #main-content .third-service .right .hidden-bg, #main-content .fourth-service .left .hidden-bg, #main-content .fourth-service .right .hidden-bg, #main-content .fifth-service .left .hidden-bg, #main-content .fifth-service .right .hidden-bg {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: none; }
+#main-content .first-service .left, #main-content .first-service .right, #main-content .second-service .left, #main-content .second-service .right, #main-content .third-service .left, #main-content .third-service .right, #main-content .fourth-service .left, #main-content .fourth-service .right, #main-content .fifth-service .left, #main-content .fifth-service .right {
+  min-height: 400px;
+  height: 400px; }
+  #main-content .first-service .left .hidden-bg, #main-content .first-service .right .hidden-bg, #main-content .second-service .left .hidden-bg, #main-content .second-service .right .hidden-bg, #main-content .third-service .left .hidden-bg, #main-content .third-service .right .hidden-bg, #main-content .fourth-service .left .hidden-bg, #main-content .fourth-service .right .hidden-bg, #main-content .fifth-service .left .hidden-bg, #main-content .fifth-service .right .hidden-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none; }
 #main-content .first-service .left .hidden-bg, #main-content .second-service .left .hidden-bg, #main-content .third-service .left .hidden-bg, #main-content .fourth-service .left .hidden-bg, #main-content .fifth-service .left .hidden-bg {
   background-color: #1ccfc9; }
 #main-content .first-service .right .hidden-bg, #main-content .second-service .right .hidden-bg, #main-content .third-service .right .hidden-bg, #main-content .fourth-service .right .hidden-bg, #main-content .fifth-service .right .hidden-bg {
