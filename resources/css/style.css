@@ -158,7 +158,8 @@ body {
     #main-content .principal .right img.main {
       position: absolute;
       bottom: 0;
-      left: -50px; }
+      left: -50px;
+      max-height: 80%; }
 #main-content .our-services, #main-content .why-us, #main-content .form-title {
   height: 250px;
   width: 100%; }
