@@ -26,6 +26,7 @@ html
 							Fundada en 1991 bajo el nombre de multiservicios de limpieza , guiada por el C.P. Eliseo Vázquez B. y ahora con un nuevo concepto e ideas creativas pero sobre todo efectivas para otorgar soluciones integrales en limpieza.
 					img.vertical-texture(src="resources/imgs/vertical-texture.png")
 				.right.col-xs-12.col-sm-6
+					img.horizontal-texture(src="resources/imgs/horizontal-texture-1.png")
 					div.quote 
 						span ¿Te interesa una cotización?
 						br
@@ -43,6 +44,7 @@ html
 					img.vertical-texture(src="resources/imgs/vertical-texture-1.png")
 					img.service.img-responsive(src='resources/imgs/first-service.png')
 				.right.col-xs-12.col-sm-9.col-md-6.col-lg-8
+					img.horizontal-texture(src="resources/imgs/horizontal-texture-1.png")
 					.txt
 						p.title ¡Le damos nueva vida a tus muebles y Tapicerías!
 						h3.main-title Lavado de Muebles y Tapicerias
@@ -54,6 +56,7 @@ html
 					img.vertical-texture(src="resources/imgs/vertical-texture-2.png")
 					img.service.img-responsive(src='resources/imgs/second-service.png')
 				.left.col-xs-12.col-sm-9.col-md-6.col-lg-8
+					img.horizontal-texture(src="resources/imgs/horizontal-texture-2.png")
 					.txt
 						p.title Los pisos de tu casa u oficina dicen mucho de tí
 						h3.main-title Pulido, Encerado y Cristalizado de pisos
@@ -69,6 +72,7 @@ html
 					img.vertical-texture(src="resources/imgs/vertical-texture-1.png")
 					img.service.img-responsive(src='resources/imgs/third-service.png')
 				.right.col-xs-12.col-sm-9.col-md-6.col-lg-8
+					img.horizontal-texture(src="resources/imgs/horizontal-texture-1.png")
 					.txt
 						p.title Vivir en un espacio limpio es una sensación incomparable
 						h3.main-title Limpieza general
@@ -80,6 +84,7 @@ html
 					img.vertical-texture(src="resources/imgs/vertical-texture-2.png")
 					img.service.img-responsive(src='resources/imgs/fourth-service.png')
 				.left.col-xs-12.col-sm-9.col-md-6.col-lg-8
+					img.horizontal-texture(src="resources/imgs/horizontal-texture-2.png")
 					.txt
 						p.title Entrega tus obras, listas para ser habitadas
 						h3.main-title Terminación de obra
@@ -95,6 +100,7 @@ html
 					img.vertical-texture(src="resources/imgs/vertical-texture-1.png")
 					img.service.img-responsive(src='resources/imgs/fifth-service.png')
 				.right.col-xs-12.col-sm-9.col-md-6.col-lg-8
+					img.horizontal-texture(src="resources/imgs/horizontal-texture-1.png")
 					.txt
 						p.title Trabajar en un espacio limpio es la mejor impresión
 						h3.main-title Servicio subcontratado de aseo diario 
@@ -107,6 +113,7 @@ html
 				img.img-responsive.love(src='resources/imgs/we-love-what-we-do.png')
 				p.title Amamos
 				p.subtitle lo que hacemos
+				img.logo-liv.img-responsive(src='resources/imgs/Logo-Liv-white.png')
 			.why-us.row
 				h2.col-xs-12
 					span.background ¿Por qué somos 
@@ -144,25 +151,55 @@ html
 						li(data-target="#carousel-opinions" data-slide-to="1")
 					.carousel-inner(role='listbox')
 						.item.active
-							img.opinion-img(src="resources/imgs/opinion-1.png")
-							.opinion-text
-								h5.title Lo que dice la gente de liv
-								p.actual-opinion 
-									span Hay 3 factores por los cuales elijo trabajar con LIV: Calidad, tiempo de respuesta y servicio
-									img.quote-close(src="resources/imgs/quote.png")
-								p.author Ivan Mirón
-								p.extra Habla Estudio
-								img.quote-open(src="resources/imgs/quote.png")
+							.small.row
+								.col-xs-12.opinion-text
+									h5.title Lo que dice la gente de liv
+									p.actual-opinion
+										img.quote-open(src="resources/imgs/quote.png")
+										span Hay 3 factores por los cuales elijo trabajar con LIV: Calidad, tiempo de respuesta y servicio
+										img.quote-close(src="resources/imgs/quote.png")
+								.col-xs-12.opinion-text.row
+									.col-xs-8.author-txt
+										img.opinion-img.img-responsive(src="resources/imgs/opinion-1.png")
+									.col-xs-4.author-txt
+										.inner-div
+											p.author Ivan Mirón
+											p.extra Habla Estudio
+							.big
+								img.opinion-img.img-responsive(src="resources/imgs/opinion-1.png")
+								.opinion-text
+									h5.title Lo que dice la gente de liv
+									p.actual-opinion 
+										span Hay 3 factores por los cuales elijo trabajar con LIV: Calidad, tiempo de respuesta y servicio
+										img.quote-close(src="resources/imgs/quote.png")
+									p.author Ivan Mirón
+									p.extra Habla Estudio
+									img.quote-open(src="resources/imgs/quote.png")
 						.item
-							img.opinion-img(src="resources/imgs/opinion-1.png")
-							.opinion-text
-								h5.title Lo que dice la gente de liv
-								p.actual-opinion 
-									span Otra opinión aquí
-									img.quote-close(src="resources/imgs/quote.png")
-								p.author Ivan Mirón
-								p.extra Habla Estudio
-								img.quote-open(src="resources/imgs/quote.png")
+							.small.row
+								.col-xs-12.opinion-text
+									h5.title Lo que dice la gente de liv
+									p.actual-opinion
+										img.quote-open(src="resources/imgs/quote.png") 
+										span Hay 3 factores por los cuales elijo trabajar con LIV: Calidad, tiempo de respuesta y servicio
+										img.quote-close(src="resources/imgs/quote.png")
+								.col-xs-12.opinion-text.row
+									.col-xs-8.author-txt
+										img.opinion-img.img-responsive(src="resources/imgs/opinion-1.png")
+									.col-xs-4.author-txt
+										.inner-div
+											p.author Ivan Mirón
+											p.extra Habla Estudio
+							.big
+								img.opinion-img.img-responsive(src="resources/imgs/opinion-1.png")
+								.opinion-text
+									h5.title Lo que dice la gente de liv
+									p.actual-opinion 
+										span Otra opinión aquí
+										img.quote-close(src="resources/imgs/quote.png")
+									p.author Ivan Mirón
+									p.extra Habla Estudio
+									img.quote-open(src="resources/imgs/quote.png")
 					a.left.carousel-control(href="#carousel-opinions" data-slide='prev')
 						span.arrow.glyphicon.glyphicon-chevron-left
 					a.right.carousel-control(href="#carousel-opinions" data-slide='next')

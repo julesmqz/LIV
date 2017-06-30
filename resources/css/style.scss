@@ -121,6 +121,7 @@ body{
 	.principal{
 		position:relative;
 		display:flex;
+		flex-wrap: wrap;
 		.left,.right{
 			height:auto;
 		}
@@ -166,6 +167,9 @@ body{
 		}
 		.right{
 			padding:0;
+			img.horizontal-texture{
+				display:none;
+			}
 			.quote{
 				color:#575858;
 				position: absolute;
@@ -332,6 +336,9 @@ body{
 					top:256px;
 				}
 			}
+			img.horizontal-texture{
+				display:none;
+			}
 		}
 	}
 
@@ -369,6 +376,9 @@ body{
 					text-align:justify;
 					top:256px;
 				}
+			}
+			img.horizontal-texture{
+				display:none;
 			}
 			
 		}
@@ -502,6 +512,9 @@ body{
 			top: 160px;
 			left: 525px;
 		}
+		.logo-liv{
+			display: none;
+		}
 	}
 
 	.options{
@@ -537,11 +550,16 @@ body{
 			position:absolute;
 			top:0;
 			left:0;
+			width:100%;
+			height:100%;
 		}
 		.carousel{
 			width:100%;
 			.carousel-inner{
 				.item{
+					.small{
+						display:none;
+					}
 					height:416px;
 					.opinion-img{
 						z-index: 5;
@@ -752,6 +770,20 @@ body{
 				}
 			}
 		}
+		.our-services,.why-us,.form-title{
+			h2{
+				.background,.background2{
+					width: 100%;
+				    left: 0;
+				    text-align: center;
+				}
+			}
+			&.added-space{
+				.background{
+					left:0;
+				}
+			}
+		}
 		.first-service,.second-service,.third-service,.fourth-service,.fifth-service{
 			.left,.right{
 				margin:auto;
@@ -815,6 +847,53 @@ body{
 				margin:auto;
 			}
 		}
+		.opinions{
+			.carousel{
+				.carousel-inner{
+					.item{
+						.opinion-text{
+							padding:84px 10px 0 400px;
+						    .actual-opinion{
+						    	font-size: 20px;
+						    }
+						    .quote-open{
+						    	top:140px;
+						    	left:355px;
+						    }
+						}
+					}
+				}
+				.right,.left{
+					opacity:1;
+					background:none;
+					cursor: normal;
+					.arrow{
+						cursor:pointer;
+						background: url('../imgs/carousel-control.png');
+						background-repeat:no-repeat;
+						background-size:cover;
+					}
+				}
+				.left{
+					.arrow{
+						left: -8%;
+					    width: 50px;
+					    height: 50px;
+					    top: 55%;
+					    line-height:45px;
+					}
+				}
+				.right{
+					.arrow{
+						right: -8%;
+					    width: 50px;
+					    height: 50px;
+					    top: 55%;
+					    line-height:45px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -825,18 +904,6 @@ body{
 			h2{
 				.background,.background2{
 					font-size: 100px;
-				}
-			}
-		}
-		.our-services{
-			h2{
-				.background,.background2{
-					left:19.5%;
-				}
-				&.added-space{
-					.background,.background2{
-						left:19.5%;
-					}
 				}
 			}
 		}
@@ -861,107 +928,269 @@ body{
 	}
 }
 
-/* @media (min-width: 900px) and (max-width: 1050px) {
+/* small devices (phones, less than 768 and up) */
+@media (max-width: 767px) {
+	.btn-fixed{
+		display:none;
+	}
 	#main-content{
 		.principal{
 			.left{
 				.txt{
-					left:15%;
-					width:250px;
+					width:70%;
+					text-align: center;
+				}
+				img.vertical-texture{
+					display:none;
 				}
 			}
 			.right{
+				img.horizontal-texture{
+					width:100%;
+					display:block;
+					position:absolute;
+					top:0;
+				}
+				.quote{
+					display:none;
+				}
 				img.main{
-					height:70vh;
-					top:30vh;
+					position: relative;
+				    margin: 45px auto auto auto;
+				    left: auto;
+				    max-height: 100%;
 				}
 			}
 		}
-		.our-services{
+		.our-services,.why-us,.form-title{
 			h2{
+				.background,.background2{
+					width: 100%;
+				    left: 0;
+				    text-align: center;
+				    font-size:50px;
+				}
 				.background{
-					left:10%;
-
+					top:50px;
+				}
+				.main{
+					font-size:36px;
 				}
 			}
 			&.added-space{
 				.background{
-					left:10%;
+					left:0;
+					font-size:50px;
+				}
+			}
+		}
+		.first-service,.second-service,.third-service,.fourth-service,.fifth-service{
+			.left,.right{
+				margin:auto;
+				box-shadow:none;
+				.hidden-bg{
+					display:block;
+					width:100%;
+				}
+				img.service{
+					max-height: 400px;
+				    left: 0;
+				    right: 0;
+				}
+				img.vertical-texture{
+					display:none;
+				}
+				.txt{
+					.title,.subtitle{
+						font-size: 12px;
+					}
+					.main-title{
+						font-size:20px;
+						line-height: 30px;
+					}
+				}
+				img.horizontal-texture{
+					width:100%;
+					display:block;
+					position:absolute;
+					top:-3px;
+					left:0;
+					max-height: 60px;
 				}
 			}
 		}
 		.first-service,.third-service,.fifth-service{
-			.right{
-				.main-title{
-					font-size:40px;
-					line-height: 50px;
-    				margin-top: 50px;
-				}
-			}
 			.left{
-				img.service{
-					height: calc(95vh - 225px - 50px);
-				}
+				background:none;
 			}
-		}
-		.third-service{
 			.right{
-				.main-title{
-					margin-top: 30px;
-				}
-			}
-		}
-		.fifth-service{
-			.right{
-				.main-title{
-					font-size:35px;
+				min-height: auto;
+				.txt{
+					padding:0;
+					margin:60px auto 10% auto;
 				}
 			}
 		}
 		.second-service,.fourth-service{
+			.right{
+				background:none;
+				display:none;
+				&.hide{
+					display:block !important;
+				}
+			}
 			.left{
-				.main-title{
-					font-size:35px;
-					line-height: 50px;
-    				margin-top: 50px;
+				min-height: auto;
+				.txt{
+					padding:0;
+					margin:60px auto 10% auto;
+				}
+			}
+		}
+		.fifth-service{
+			.left{
+				img.service{
+					top: -5%;
+    				max-height: 450px;
 				}
 			}
 			.right{
-				img.service{
-					height: calc(95vh - 225px - 50px);
+				.txt{
+					.main-title{
+						span{
+							font-size: 20px;
+						}
+					}
 				}
 			}
-		}
-
-		.fourth-service{
-			.left{
-				.main-title{
-					margin-top: 30px;
-				}
+			.button-contact{
+				left: 0;
+			    position: relative;
+			    background-size: contain;
+			    vertical-align: middle;
+			    span{
+			    	position: relative;
+				    left: auto;
+				    bottom: auto;
+				    top: 30%;
+				    display: block;
+			    }
 			}
 		}
-
 		.we-love{
-			.title{
-				font-size: 120px;
+			.title,.subtitle{
+				display: none;
 			}
-			.subtitle{
-				font-size: 70px;
-    			left: 300px;
+			.logo-liv{
+				display: block;
+				position: absolute;
+			    top: 0;
+			    max-height: 120px;
+			    margin: auto;
+			    left: 30%;
 			}
 		}
-
-		.why-us{
+		.why-us,.form-title{
 			h2{
-				.main{
-					font-size: 55px;
+				.background,.background2{
+					font-size: 35px;
 				}
+			}
+		}
+		.options{
+			.button{
+				.button-contact-2{
+					left: 0;
+				    position: relative;
+				    background-size: contain;
+				    vertical-align: middle;
+				    span{
+				    	position: relative;
+					    left: auto;
+					    bottom: auto;
+					    top: 30%;
+					    display: block;
+				    }
+				}
+			}
+		}
+		.form-button{
+			.button-contact-2{
+				left: 0;
+			    position: relative;
+			    background-size: contain;
+			    vertical-align: middle;
+			    span{
+			    	position: relative;
+				    left: auto;
+				    bottom: auto;
+				    top: 30%;
+				    display: block;
+			    }
+			}
+		}
+		.opinions{
+			.carousel{
+				.carousel-inner{
+					.item{
+						.big{
+							display:none;
+						}
+						.small{
+							display:block;
+							background:white;
+							.author-txt{
+								padding:0;
+							}
+						}
+						.opinion-text{
+							display:flex;
+							flex-wrap:wrap;
+							width: 100%;
+						    height: auto;
+						    position: relative;
+						    padding: 0 30px;
+						    left: auto;
+						    bottom: auto;
+						    margin-bottom:20px;
+						    .title{
+						    	text-align: center;
+						    	width:100%;
+						    	margin-bottom:30px;
+						    }
+						    .quote-open{
+						    	position:relative;
+						    	top:-10px;
+						    	left:auto;
+						    	margin-right:10px;
+						    }
+						    .opinion-img{
+						    	position:relative;
+    							bottom: -20px;
+						    }
+						    .inner-div{
+						    	position:relative;
+						    	bottom:0;
+						    	top:80%;
+						    }
+						}
+					}
+				}
+			}
+		}
+		.final{
+			min-height: 400px;
+			.logo{
+				img{
+					height: 100px;
+    				margin-top: 50px;
+				}
+			}
+			.img-1{
+				top: auto;
+			    bottom: 0;
+			    max-width: 200px;
 			}
 		}
 	}
-} */
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-
 }

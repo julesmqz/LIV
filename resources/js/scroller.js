@@ -36,11 +36,12 @@ $(document).ready(function() {
 				position: 'absolute',
 				top: fifthTop
 			});
-
 			$('.btn-fixed').hide();
 			$('.btn-fixed-2').show();
 		} else {
-			$('.btn-fixed').show();
+			if($(window).width() > 767){
+				$('.btn-fixed').show();
+			}
 			$('.btn-fixed-2').hide();
 		}
 
