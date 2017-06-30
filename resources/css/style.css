@@ -734,7 +734,8 @@ body {
     left: 0;
     position: relative;
     background-size: contain;
-    vertical-align: middle; }
+    vertical-align: middle;
+    width: auto; }
     #main-content .fifth-service .button-contact span {
       position: relative;
       left: auto;
@@ -756,7 +757,8 @@ body {
     left: 0;
     position: relative;
     background-size: contain;
-    vertical-align: middle; }
+    vertical-align: middle;
+    width: auto; }
     #main-content .options .button .button-contact-2 span {
       position: relative;
       left: auto;
@@ -767,7 +769,8 @@ body {
     left: 0;
     position: relative;
     background-size: contain;
-    vertical-align: middle; }
+    vertical-align: middle;
+    width: auto; }
     #main-content .form-button .button-contact-2 span {
       position: relative;
       left: auto;
