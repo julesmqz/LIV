@@ -102,17 +102,20 @@ body {
   transform: translate3d(0px, 0px, 0px); }
 
 #main-content .principal {
-  position: relative; }
+  position: relative;
+  display: flex; }
+  #main-content .principal .left, #main-content .principal .right {
+    height: auto; }
   #main-content .principal .left {
     padding: 0;
     background: #1ccfc9;
-    box-shadow: 0 1px 0 0 #b8bfbf, 0 5px 6px 5px rgba(0, 0, 0, 0.03);
-    height: 100vh; }
+    box-shadow: 0 1px 0 0 #b8bfbf, 0 5px 6px 5px rgba(0, 0, 0, 0.03); }
     #main-content .principal .left .txt {
       color: white;
       margin: auto;
       width: 300px;
-      text-align: right; }
+      text-align: right;
+      padding-bottom: 100px; }
       #main-content .principal .left .txt .title {
         font-family: 'Raleway', sans-serif;
         font-weight: bolder;
@@ -132,13 +135,12 @@ body {
           margin-bottom: 20px;
           font-weight: bold; }
     #main-content .principal .left img.vertical-texture {
-      height: 100vh;
+      height: 100%;
       position: absolute;
       left: 99%;
       top: 0; }
   #main-content .principal .right {
-    padding: 0;
-    height: 100vh; }
+    padding: 0; }
     #main-content .principal .right .quote {
       color: #575858;
       position: absolute;
@@ -318,8 +320,7 @@ body {
       top: 0;
       max-width: 90px; }
 #main-content .first-service .left, #main-content .first-service .right, #main-content .second-service .left, #main-content .second-service .right, #main-content .third-service .left, #main-content .third-service .right, #main-content .fourth-service .left, #main-content .fourth-service .right, #main-content .fifth-service .left, #main-content .fifth-service .right {
-  min-height: 400px;
-  height: 400px; }
+  min-height: 400px; }
   #main-content .first-service .left .hidden-bg, #main-content .first-service .right .hidden-bg, #main-content .second-service .left .hidden-bg, #main-content .second-service .right .hidden-bg, #main-content .third-service .left .hidden-bg, #main-content .third-service .right .hidden-bg, #main-content .fourth-service .left .hidden-bg, #main-content .fourth-service .right .hidden-bg, #main-content .fifth-service .left .hidden-bg, #main-content .fifth-service .right .hidden-bg {
     height: 100%;
     width: 100%;
@@ -497,10 +498,10 @@ body {
       font-size: 20px;
       top: 20px; }
 #main-content .final {
-  height: 100vh;
   text-align: center;
   padding-top: 50px;
-  position: relative; }
+  position: relative;
+  min-height: 700px; }
   #main-content .final .number span {
     color: #ff9012;
     font-size: 24px; }
@@ -546,6 +547,13 @@ body {
   .button-contact {
     left: 30%; }
 
+  #main-content .principal {
+    display: flex; }
+    #main-content .principal .left, #main-content .principal .right {
+      height: auto; }
+      #main-content .principal .left img.vertical-texture, #main-content .principal .right img.vertical-texture {
+        height: 100%;
+        max-width: 100px; }
   #main-content .first-service .left, #main-content .first-service .right, #main-content .second-service .left, #main-content .second-service .right, #main-content .third-service .left, #main-content .third-service .right, #main-content .fourth-service .left, #main-content .fourth-service .right, #main-content .fifth-service .left, #main-content .fifth-service .right {
     margin: auto;
     box-shadow: none; }

@@ -120,16 +120,20 @@ body{
 #main-content{
 	.principal{
 		position:relative;
+		display:flex;
+		.left,.right{
+			height:auto;
+		}
 		.left{
 			padding:0;
 			background:$first-bg-color;
 			box-shadow:0 1px 0 0 #b8bfbf, 0 5px 6px 5px rgba(0,0,0,0.03);
-			height: 100vh;
 			.txt{
 				color: white;
 			    margin:auto;
 			    width:300px;
 			    text-align:right;
+			    padding-bottom:100px;
 				.title{
 					font-family: 'Raleway', sans-serif;
 				    font-weight: bolder;
@@ -154,7 +158,7 @@ body{
 				}
 			}
 			img.vertical-texture{
-				height:100vh;
+				height:100%;
 				position:absolute;
 				left: 99%;
 				top:0;
@@ -162,7 +166,6 @@ body{
 		}
 		.right{
 			padding:0;
-			height:100vh;
 			.quote{
 				color:#575858;
 				position: absolute;
@@ -394,7 +397,6 @@ body{
 	.first-service,.second-service,.third-service,.fourth-service,.fifth-service{
 		.left,.right{
 			min-height: 400px;
-			height:400px;
 			.hidden-bg{
 				    height: 100%;
 				    width: 100%;
@@ -662,10 +664,10 @@ body{
 		}
 	}
 	.final{
-		height: 100vh;
 	    text-align: center;
 	    padding-top: 50px;
 	    position:relative;
+	    min-height:700px;
 		.number{
 			span{
 				color: #ff9012;
@@ -739,6 +741,16 @@ body{
 			left:30%;
 		}
 	#main-content{
+		.principal{
+			display:flex;
+			.left,.right{
+				height:auto;
+				img.vertical-texture{
+					height:100%;
+					max-width:100px;
+				}
+			}
+		}
 		.first-service,.second-service,.third-service,.fourth-service,.fifth-service{
 			.left,.right{
 				margin:auto;
