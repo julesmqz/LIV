@@ -223,7 +223,8 @@ body {
   .end .inner {
     display: flex;
     flex-wrap: wrap;
-    height: 100%; }
+    height: 100%;
+    margin: 0; }
   .end .number span {
     color: #ff9012;
     font-size: 24px; }
