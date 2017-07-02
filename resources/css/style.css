@@ -219,7 +219,8 @@ body {
 
 .end {
   text-align: center;
-  padding-top: 50px; }
+  padding-top: 50px;
+  height: auto; }
   .end .inner {
     display: flex;
     height: 100%;
