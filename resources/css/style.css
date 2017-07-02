@@ -219,8 +219,7 @@ body {
 
 .end {
   text-align: center;
-  padding-top: 50px;
-  height: auto; }
+  padding-top: 50px; }
   .end .inner {
     display: flex;
     height: 100%;
@@ -731,7 +730,15 @@ body {
       display: block; }
 
   .end {
+    height: auto;
     margin-top: 20px; }
+    .end .inner {
+      height: auto; }
+    .end .logo {
+      margin-bottom: 100px; }
+    .end .facebook, .end .copyright {
+      position: relative;
+      bottom: auto; }
     .end [class^="animate"] {
       position: relative;
       opacity: 1; }

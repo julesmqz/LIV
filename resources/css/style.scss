@@ -268,7 +268,6 @@ body{
 .end{
 	text-align: center;
     padding-top: 50px;
-    height:auto;
     .inner{
     	display:flex;
     	height:100%;
@@ -1015,7 +1014,18 @@ body{
 		}
 	}
 	.end{
+    	height:auto;
 		margin-top:20px;
+    	.inner{
+    		height:auto;
+    	}
+    	.logo{
+    		margin-bottom:100px;
+    	}
+    	.facebook,.copyright{
+    		position:relative;
+    		bottom:auto;
+    	}
 		[class^="animate"] {
 		    position:relative;
 		    opacity:1;
