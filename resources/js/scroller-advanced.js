@@ -60,11 +60,11 @@ $(document).ready(function() {
 	}, '-=0.7');
 
 	tl.to(elements[36], 0.1, {
-		display:'none'
+		display: 'none'
 	}, '-=0.7');
 
 	tl.to(elements[37], 0.1, {
-		display:'inline'
+		display: 'inline'
 	});
 
 
@@ -432,20 +432,47 @@ $(document).ready(function() {
 	// }
 
 	// mouse scrolling controls animation
-	$(window).on('mousewheel', function() {
-		let yPos = event.deltaY;
+	if (Modernizr.touch) {
+		// Determining swipe direction
+		// http://stackoverflow.com/a/22257774/1064325
+		var touchStartY;
+		document.addEventListener('touchstart', function(e) {
+			touchStartY = e.touches[0].clientY;
+		}, false);
 
-		if (yPos > 5 && window.innerWidth > 991) {
-			console.log('Animation is playing');
-			tl.play();
-		} else if (yPos < -5 && window.innerWidth > 991) {
-			console.log('Animation is backwards');
-			tl.reverse();
-		} else {
-			console.log('Animation is gonna pause');
-			tl.pause();
-		}
-	});
+		// Preventing iOS end of page bounce effect
+		// http://stackoverflow.com/a/7771215/1064325
+		document.addEventListener('touchmove', function(e) {
+			e.preventDefault();
+		}, false);
+
+		document.addEventListener('touchend', function(e) {
+			var touchEndY = e.changedTouches[0].clientY;
+			if (touchStartY > touchEndY + 5) {
+				tl.play()
+			} else if (touchStartY < touchEndY - 5) {
+				tl.reverse()
+			}else{
+				tl.pause();
+			}
+		}, false);
+	} else {
+		$(window).on('mousewheel', function() {
+			let yPos = event.deltaY;
+
+			if (yPos > 5 && window.innerWidth > 991) {
+				console.log('Animation is playing');
+				tl.play();
+			} else if (yPos < -5 && window.innerWidth > 991) {
+				console.log('Animation is backwards');
+				tl.reverse();
+			} else {
+				console.log('Animation is gonna pause');
+				tl.pause();
+			}
+		});
+	}
+
 
 	/* menu open */
 	$(document).on('click', '.menu-icon', function() {
@@ -466,10 +493,10 @@ $(document).ready(function() {
 
 		var currentScroll = $(window).scrollTop(); // get current position
 		if (window.innerWidth <= 991) {
-			if( currentScroll > 150 ){
-				$('.menu-icon.animate-menu-hide').css('display','none');
-			}else{
-				$('.menu-icon.animate-menu-hide').css('display','block');
+			if (currentScroll > 150) {
+				$('.menu-icon.animate-menu-hide').css('display', 'none');
+			} else {
+				$('.menu-icon.animate-menu-hide').css('display', 'inline');
 			}
 		}
 
@@ -499,11 +526,11 @@ $(document).ready(function() {
 			}
 		} else {
 			$('html, body').animate({
-				scrollTop: $("#"+d.data('scroll')).offset().top
+				scrollTop: $("#" + d.data('scroll')).offset().top
 			}, 2000);
 		}
 
-		if( !noMenu ){
+		if (!noMenu) {
 			$('.menu-icon').click();
 		}
 	});
