@@ -420,6 +420,10 @@ $(document).ready(function() {
 	// 	tl.seek(100,false);
 	// }
 
+	window.addEventListener('scroll', function() { alert("Scrolled"); });
+	// or
+	$(window).scroll(function() { alert("Scrolled"); });
+
 	// mouse scrolling controls animation
 	$(window).on('scroll, touchstart, touchend, touchmove, mousewheel', function() {
 		let yPos = event.deltaY;
