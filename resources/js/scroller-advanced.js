@@ -459,7 +459,7 @@ $(document).ready(function() {
 			timer = setTimeout(function() {
 				temp = 0;
 				tl.pause();
-			}, 55);
+			}, 2000);
 
 			var touchEndY = e.changedTouches[0].clientY;
 			if (touchStartY > touchEndY + 5) {

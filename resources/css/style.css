@@ -640,13 +640,13 @@ body {
     height: auto; }
     .services .all-services .service-description {
       position: relative;
-      flex: none;
-      padding-right: 0;
+      display: block;
+      padding: 0;
       margin-bottom: 50px;
       height: auto; }
       .services .all-services .service-description .first, .services .all-services .service-description .second {
         height: auto;
-        margin: auto;
+        margin: auto 40px;
         position: relative; }
         .services .all-services .service-description .first .service, .services .all-services .service-description .second .service {
           margin: auto; }

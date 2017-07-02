@@ -874,13 +874,13 @@ body{
 			height:auto;
 			.service-description{
 				position:relative;
-				flex:none;
-				padding-right: 0;
+				display:block;
+				padding:0;
 				margin-bottom: 50px;
 				height: auto;
 				.first,.second{
 					height:auto;
-					margin:auto;
+					margin:auto 40px;
 					position:relative;
 					.service{
 						margin:auto;
