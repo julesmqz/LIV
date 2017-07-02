@@ -5,7 +5,9 @@ body {
 #main-content {
   position: relative;
   max-width: 1440px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
 
 [class^="col"] {
   padding: 0; }
@@ -66,7 +68,8 @@ body {
 
 .principal-row {
   height: 100vh;
-  max-height: 100vh; }
+  max-height: 100vh;
+  padding: 0; }
   .principal-row .first {
     height: 100vh;
     position: relative;
@@ -169,7 +172,9 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  padding: 0;
+  margin: 0; }
 
 .end {
   text-align: center;
@@ -410,13 +415,13 @@ body {
 
 .services .all-services {
   padding: 0 40px;
-  height: calc( 100vh - 30vh  - 50px); }
+  height: calc( 100vh - 30vh  - 50px);
+  max-width: 97%; }
   .services .all-services .service-description {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    position: absolute;
-    padding-right: 50px; }
+    position: absolute; }
     .services .all-services .service-description .first .service, .services .all-services .service-description .second .service {
       z-index: 51;
       max-height: calc( 100vh - 30vh  - 80px); }
@@ -523,10 +528,6 @@ body {
 @media (max-width: 991px) {
   body {
     overflow: auto; }
-
-  #main-content {
-    margin: 0;
-    padding: 0; }
 
   .button-contact {
     display: none; }
@@ -695,6 +696,8 @@ body {
       display: none; }
     .principal-row .second .horizontal-texture {
       display: block; }
+  .principal-row .first .vertical-texture {
+    display: none; }
 
   .we-love .title, .we-love .subtitle {
     display: none; }
@@ -718,7 +721,7 @@ body {
     display: none; }
   .services .all-services .service-description .first img.horizontal-texture, .services .all-services .service-description .second img.horizontal-texture {
     display: block;
-    max-width: 100%;
+    width: 100%;
     position: relative;
     top: -2px; }
 

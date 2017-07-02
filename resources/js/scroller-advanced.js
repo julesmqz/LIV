@@ -420,10 +420,6 @@ $(document).ready(function() {
 	// 	tl.seek(100,false);
 	// }
 
-	window.addEventListener('scroll', function(){
-		tl.play();
-	});
-
 	// mouse scrolling controls animation
 	$(window).on('mousewheel', function() {
 		let yPos = event.deltaY;

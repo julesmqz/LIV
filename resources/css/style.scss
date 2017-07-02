@@ -11,6 +11,8 @@ body{
 	position:relative;
 	max-width:1440px;
 	overflow:hidden;
+	margin:0;
+	padding:0;
 }
 
 [class^="col"] {
@@ -80,6 +82,7 @@ body{
 .principal-row{
 	height: 100vh;
 	max-height:100vh;
+	padding:0;
 	.first{
 		height: 100vh;
 		position:relative;
@@ -208,6 +211,8 @@ body{
 	top:0;
 	width:100%;
 	height:100vh;
+	padding:0;
+	margin:0;
 }
 
 .end{
@@ -525,12 +530,12 @@ body{
 	.all-services{
 		padding:0 40px;
 		height:calc( 100vh - #{$title-height}  - 50px);
+		max-width: 97%;
 		.service-description{
 			display: flex;
 		    flex-wrap: wrap;
 		    height: 100%;
 		    position:absolute;
-		    padding-right: 50px;
 		    .first,.second{
 		    	.service{
 		    		z-index: $z-index + 1;
@@ -716,11 +721,6 @@ body{
 @media (max-width:991px) {
 	body{
 		overflow:auto;
-	}
-
-	#main-content{
-		margin:0;
-		padding:0;
 	}
 
 	.button-contact{
@@ -983,6 +983,11 @@ body{
 				display:block;
 			}
 		}
+		.first{
+			.vertical-texture{
+				display: none;
+			}
+		}
 	}
 
 	.we-love{
@@ -1023,7 +1028,7 @@ body{
 					}
 					img.horizontal-texture{
 						display: block;
-						max-width: 100%;
+						width: 100%;
 						position:relative;
 						top:-2px;
 					}
