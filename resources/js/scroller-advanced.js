@@ -502,7 +502,7 @@ $(document).ready(function() {
 
 	/* Hide menu on small screens */
 	$(window).on('scroll resize', function() { // assign scroll event listener
-
+		//tl.seek(0,false); // always return to 0
 		var currentScroll = $(window).scrollTop(); // get current position
 		if (window.innerWidth <= 991) {
 			if (currentScroll > 150) {

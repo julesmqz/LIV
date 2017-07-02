@@ -11,7 +11,7 @@ body{
 	position:relative;
 	max-width:1440px;
 	overflow:hidden;
-	margin:0;
+	margin:auto;
 	padding:0;
 }
 
@@ -772,6 +772,10 @@ body{
 		overflow:auto;
 	}
 
+	#main-content{
+		margin:0;
+	}
+
 	.button-contact{
 		display: none;
 	}
@@ -880,7 +884,6 @@ body{
 				height: auto;
 				.first,.second{
 					height:auto;
-					margin:auto 40px;
 					position:relative;
 					.service{
 						margin:auto;
