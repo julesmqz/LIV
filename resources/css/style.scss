@@ -40,16 +40,66 @@ body{
 		text-align:center;
 	}
 }
-
+.menu{
+	position: absolute;
+    max-width: 250px;
+    width:100%;
+    height: 100vh;
+    z-index: 100;
+	background: white;
+	left:-1000;
+	box-shadow:0 1px 0 0 #909292, 0 1px 4px 3px rgba(0,0,0,0.09);
+    .main{
+    	height: 20vh;
+    	.logos{
+    		padding-top: 25px;
+		    padding-left: 36px;
+		    .logo-liv{
+				max-width:100px;
+				margin-right: 25px;
+			}
+			.menu-icon{
+				cursor: pointer;
+			}
+    	}
+    }
+    .list{
+    	height: 80vh;
+    	.menu-list{
+    		margin:0;
+    		list-style:none;
+    		padding:0 50px;
+    		li{
+    			font-family: Raleway;
+			    font-size: 19px;
+			    color: #575858;
+			    margin-bottom: 25px;
+			    border-bottom: 1px solid $first-bg-color;
+			    cursor: pointer;
+			    &:hover{
+			    	color: $second-bg-color;
+			    	border-color: $second-bg-color;
+			    }
+    		}
+    	}
+    }
+}
 .menu-launcher{
 	position:absolute;
 	top:25px;
 	left:20px;
 	z-index:$z-index + 10;
-	cursor:pointer;
 	.logo-liv{
 		max-width:100px;
 		margin-right: 25px;
+	}
+	.menu-icon{
+		cursor:pointer;
+	}
+	.animate-menu-show{
+		display:none;
+		margin-top: 25px;
+		cursor: pointer;
 	}
 }
 
@@ -725,15 +775,32 @@ body{
 
 	.button-contact{
 		display: none;
-		&.hide{
-			display:block;
+	}
+
+	.other-button.hide{
+		display: block !important;
+		position:relative;
+		top:-20px;
+		.button-contact{
+			display: block;
+			position:relative;
 		}
 	}
 
 	.menu-launcher{
+		position:fixed;
 		.logo-liv{
 			max-width:50px;
+			display: none;
 		}
+		.animate-menu-show{
+			display:block;
+			margin-top:0;
+		}
+	}
+
+	.menu{
+		position:fixed;
 	}
 
 	.our-services,.why-us,.form-title{
@@ -823,6 +890,7 @@ body{
 						width: 95%;
 					    padding: 5px;
     					margin: auto;
+    					margin-bottom: 15px;
 					}
 					.vertical-texture{
 						left:auto;

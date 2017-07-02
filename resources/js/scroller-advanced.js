@@ -42,6 +42,8 @@ $(document).ready(function() {
 		$('.animate-final-left'),
 		$('.animate-final-middle'),
 		$('.animate-final-right'),
+		$('.animate-menu-hide'),
+		$('.animate-menu-show'),
 	];
 
 	//instantiate a TimelineLite    
@@ -56,6 +58,15 @@ $(document).ready(function() {
 		left: -700,
 		opacity: 0
 	}, '-=0.7');
+
+	tl.to(elements[36], 0.1, {
+		display:'none'
+	}, '-=0.7');
+
+	tl.to(elements[37], 0.1, {
+		display:'inline'
+	});
+
 
 	// our services
 
@@ -200,27 +211,27 @@ $(document).ready(function() {
 	tl.to(elements[16], 0.7, {
 		opacity: 0.98,
 		left: 0
-	},'-=0.7');
+	}, '-=0.7');
 
 	tl.to(elements[17], 0.7, {
 		opacity: 0.82,
 		left: 0
-	},'-=0.7');
+	}, '-=0.7');
 
 	tl.to(elements[15], 0.7, {
 		opacity: 0,
 		top: 1000
-	},'+=1');
+	}, '+=1');
 
 	tl.to(elements[16], 0.7, {
 		opacity: 0,
 		left: 1000
-	},'-=0.7');
+	}, '-=0.7');
 
 	tl.to(elements[17], 0.7, {
 		opacity: 0,
 		left: -1000
-	},'-=0.7');
+	}, '-=0.7');
 
 	/* Why us */
 
@@ -265,7 +276,7 @@ $(document).ready(function() {
 	tl.to(elements[21], 0.7, {
 		left: 1000,
 		opacity: 0
-	},'+=2');
+	}, '+=2');
 
 	tl.to(elements[22], 0.7, {
 		left: -1000,
@@ -294,7 +305,7 @@ $(document).ready(function() {
 
 	tl.to(elements[14], 0.7, {
 		opacity: 0,
-		bottom:-1000
+		bottom: -1000
 	}, '-=0.7');
 
 	// opninions carrousel
@@ -306,7 +317,7 @@ $(document).ready(function() {
 	tl.to(elements[24], 0.7, {
 		top: 1000,
 		opacity: 0
-	},'+=1');
+	}, '+=1');
 
 	/* Contact us */
 
@@ -357,7 +368,7 @@ $(document).ready(function() {
 	tl.to(elements[32], 0.7, {
 		bottom: -1000,
 		opacity: 0
-	},'+=2');
+	}, '+=2');
 
 	tl.to(elements[27], 0.7, {
 		left: -1000,
@@ -433,6 +444,67 @@ $(document).ready(function() {
 		} else {
 			console.log('Animation is gonna pause');
 			tl.pause();
+		}
+	});
+
+	/* menu open */
+	$(document).on('click', '.menu-icon', function() {
+		tl.pause();
+		let menu = $('.menu');
+		let options = {
+			left: 0
+		}
+
+		if (menu.position().left > -1) {
+			options.left = -1000;
+		}
+		TweenLite.to(menu, 0.5, options);
+	});
+
+	/* Hide menu on small screens */
+	$(window).on('scroll resize', function() { // assign scroll event listener
+
+		var currentScroll = $(window).scrollTop(); // get current position
+		if (window.innerWidth <= 991) {
+			if( currentScroll > 150 ){
+				$('.menu-icon.animate-menu-hide').css('display','none');
+			}else{
+				$('.menu-icon.animate-menu-hide').css('display','block');
+			}
+		}
+
+	});
+
+	/* Scroll to certain div */
+	$(document).on('click', '[data-scroll]', function() {
+		tl.pause();
+		let d = $(this);
+		let noMenu = d.data('noMenu');
+		if (window.innerWidth > 991) {
+			switch (d.data('scroll')) {
+				case 'home':
+					tl.seek(0);
+					break;
+				case 'services':
+					tl.seek(2.2);
+					break;
+				case 'why-us':
+					tl.seek(19.8);
+					break;
+				case 'contact':
+					tl.seek(27.8);
+					break;
+				default:
+					break;
+			}
+		} else {
+			$('html, body').animate({
+				scrollTop: $("#"+d.data('scroll')).offset().top
+			}, 2000);
+		}
+
+		if( !noMenu ){
+			$('.menu-icon').click();
 		}
 	});
 

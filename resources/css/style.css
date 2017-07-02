@@ -32,15 +32,56 @@ body {
     width: 100%;
     text-align: center; }
 
+.menu {
+  position: absolute;
+  max-width: 250px;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background: white;
+  left: -1000;
+  box-shadow: 0 1px 0 0 #909292, 0 1px 4px 3px rgba(0, 0, 0, 0.09); }
+  .menu .main {
+    height: 20vh; }
+    .menu .main .logos {
+      padding-top: 25px;
+      padding-left: 36px; }
+      .menu .main .logos .logo-liv {
+        max-width: 100px;
+        margin-right: 25px; }
+      .menu .main .logos .menu-icon {
+        cursor: pointer; }
+  .menu .list {
+    height: 80vh; }
+    .menu .list .menu-list {
+      margin: 0;
+      list-style: none;
+      padding: 0 50px; }
+      .menu .list .menu-list li {
+        font-family: Raleway;
+        font-size: 19px;
+        color: #575858;
+        margin-bottom: 25px;
+        border-bottom: 1px solid #1ccfc9;
+        cursor: pointer; }
+        .menu .list .menu-list li:hover {
+          color: #ff9012;
+          border-color: #ff9012; }
+
 .menu-launcher {
   position: absolute;
   top: 25px;
   left: 20px;
-  z-index: 60;
-  cursor: pointer; }
+  z-index: 60; }
   .menu-launcher .logo-liv {
     max-width: 100px;
     margin-right: 25px; }
+  .menu-launcher .menu-icon {
+    cursor: pointer; }
+  .menu-launcher .animate-menu-show {
+    display: none;
+    margin-top: 25px;
+    cursor: pointer; }
 
 .button-contact {
   text-transform: uppercase;
@@ -531,11 +572,26 @@ body {
 
   .button-contact {
     display: none; }
-    .button-contact.hide {
-      display: block; }
 
-  .menu-launcher .logo-liv {
-    max-width: 50px; }
+  .other-button.hide {
+    display: block !important;
+    position: relative;
+    top: -20px; }
+    .other-button.hide .button-contact {
+      display: block;
+      position: relative; }
+
+  .menu-launcher {
+    position: fixed; }
+    .menu-launcher .logo-liv {
+      max-width: 50px;
+      display: none; }
+    .menu-launcher .animate-menu-show {
+      display: block;
+      margin-top: 0; }
+
+  .menu {
+    position: fixed; }
 
   .our-services, .why-us, .form-title {
     height: 25vh; }
@@ -598,7 +654,8 @@ body {
         .services .all-services .service-description .first .txt, .services .all-services .service-description .second .txt {
           width: 95%;
           padding: 5px;
-          margin: auto; }
+          margin: auto;
+          margin-bottom: 15px; }
         .services .all-services .service-description .first .vertical-texture, .services .all-services .service-description .second .vertical-texture {
           left: auto;
           right: 0;

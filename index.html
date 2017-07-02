@@ -17,7 +17,22 @@
   </head>
   <body>
     <div id="main-content" class="container-fluid">
-      <div class="menu-launcher"><img src="resources/imgs/Logo-Liv-white.png" class="logo-liv"/><img src="resources/imgs/menu-launcher.png" class="menu-icon"/></div>
+      <nav id="main-menu" class="menu">
+        <div class="row main">
+          <div class="col-xs-12 logos"><img src="resources/imgs/Logo-Liv-green.png" class="logo-liv"/><img src="resources/imgs/menu-launcher-blu.png" class="menu-icon"/></div>
+        </div>
+        <div class="row list">
+          <div class="col-xs-12 list">
+            <ul class="menu-list">
+              <li data-scroll="home">HOME</li>
+              <li data-scroll="services">Nuestros Servicios</li>
+              <li data-scroll="why-us">Tu mejor opción</li>
+              <li data-scroll="contact">Contacto</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="menu-launcher"><img src="resources/imgs/Logo-Liv-white.png" class="logo-liv animate-menu-hide"/><img src="resources/imgs/menu-launcher.png" class="menu-icon animate-menu-hide"/><img src="resources/imgs/menu-launcher-blu.png" class="menu-icon animate-menu-show"/></div>
       <div id="home" class="row principal-row">
         <div class="col-xs-12 col-sm-6 first animate-principal-text">
           <div class="txt">
@@ -28,6 +43,9 @@
         </div>
         <div class="col-xs-12 col-sm-6 second animate-main-image"><img src="resources/imgs/horizontal-texture-1.png" class="horizontal-texture"/>
           <div class="quote"> <span>¿Te interesa una cotización?</span><br/><img src="resources/imgs/whatsapp.png" class="whatsapp"/><span class="number">33 14171084</span></div><img src="resources/imgs/main.png" class="main img-responsive"/>
+        </div>
+        <div class="col-xs-12 other-button hide">
+          <div data-scroll="contact" data-no-menu="data-no-menu" class="button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
         </div>
       </div>
       <div id="services" class="row services">
@@ -47,6 +65,9 @@
                 <p class="subtitle">Contamos con equipo de vanguardia y lo más importante tenemos el proceso más efectivo, con el cual garantizamos larga vida para tus textiles y tapicerías además de excelentes resultados sin dañar, decolorar o dejar residuos.</p>
               </div>
             </div>
+            <div class="col-xs-12 other-button hide">
+              <div data-scroll="contact" data-no-menu="data-no-menu" class="button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
+            </div>
           </div>
           <div class="row service-description">
             <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4 second hide"><img src="resources/imgs/vertical-texture-2.png" class="vertical-texture"/><img src="resources/imgs/second-service.png" class="service img-responsive"/></div>
@@ -58,6 +79,9 @@
               </div>
             </div>
             <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4 second animate-second-service-two"><img src="resources/imgs/vertical-texture-2.png" class="vertical-texture"/><img src="resources/imgs/second-service.png" class="service img-responsive"/></div>
+            <div class="col-xs-12 other-button hide">
+              <div data-scroll="contact" data-no-menu="data-no-menu" class="button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
+            </div>
           </div>
           <div class="row service-description">
             <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4 first animate-third-service-one"><img src="resources/imgs/vertical-texture-1.png" class="vertical-texture"/><img src="resources/imgs/third-service.png" class="service img-responsive"/></div>
@@ -67,6 +91,9 @@
                 <h3 class="main-title">Limpieza general</h3>
                 <p class="subtitle">Porque sabemos lo importante que es la imagen de tu hogar o negocio diseñamos un traje a la medida para cada cliente, con el mejor equipo y un paquete de servicios especializado, siempre buscando la satisfacción 5 estrellas.</p>
               </div>
+            </div>
+            <div class="col-xs-12 other-button hide">
+              <div data-scroll="contact" data-no-menu="data-no-menu" class="button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
             </div>
           </div>
           <div class="row service-description">
@@ -79,6 +106,9 @@
               </div>
             </div>
             <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4 second animate-fourth-service-two"><img src="resources/imgs/vertical-texture-2.png" class="vertical-texture"/><img src="resources/imgs/fourth-service.png" class="service img-responsive"/></div>
+            <div class="col-xs-12 other-button hide">
+              <div data-scroll="contact" data-no-menu="data-no-menu" class="button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
+            </div>
           </div>
           <div class="row service-description">
             <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4 first animate-fifth-service-one"><img src="resources/imgs/vertical-texture-1.png" class="vertical-texture"/><img src="resources/imgs/fifth-service.png" class="service img-responsive"/></div>
@@ -88,6 +118,9 @@
                 <h3 class="main-title">Servicio subcontratado de aseo diario <span>(afanadoras)</span></h3>
                 <p class="subtitle">Lo más importante de tu negocio u oficina es la primera impresión que se llevan tus clientes  y socios, permítenos ser parte de un plan personalizado de limpieza diaria para que todos los días  luzca impecable.</p>
               </div>
+            </div>
+            <div class="col-xs-12 other-button hide">
+              <div data-scroll="contact" data-no-menu="data-no-menu" class="button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
             </div>
           </div>
         </div>
@@ -124,6 +157,9 @@
               <p class="text">Déjanos ayudarte a que los servicios de limpieza dejen de ser solo un gasto y puedas recibir una factura para deducibilidad.</p>
             </div>
           </div>
+        </div>
+        <div class="col-xs-12 other-button hide">
+          <div data-scroll="contact" data-no-menu="data-no-menu" class="button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
         </div>
       </div>
       <div id="opinions" class="real-opinions row">
@@ -256,7 +292,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <div data-scroll-to-form="data-scroll-to-form" class="button-contact animate-button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
+          <div data-scroll="contact" data-no-menu="data-no-menu" class="button-contact animate-button-contact"><span>¡Resuelve hoy tus problemas de limpieza!</span></div>
         </div>
       </div>
     </div>
