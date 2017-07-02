@@ -429,10 +429,10 @@ $(document).ready(function() {
 		var yPos = event.deltaY;
 		alert(yPos);
 
-		if (yPos > 5 && window.innerWidth > 991) {
+		if (yPos > 0 && window.innerWidth > 991) {
 			console.log('Animation is playing');
 			tl.play();
-		} else if (yPos < -5 && window.innerWidth > 991) {
+		} else if (yPos < -0 && window.innerWidth > 991) {
 			console.log('Animation is backwards');
 			tl.reverse();
 		} else {
