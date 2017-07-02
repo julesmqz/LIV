@@ -613,8 +613,6 @@ body {
     text-align: center; }
   .principal-row .second .quote .number {
     font-size: 30px; }
-  .principal-row .first, .principal-row .second {
-    height: auto; }
 
   .principal-row, .services, .we-love, .reasons, .real-opinions, .contact, .end {
     position: relative;
@@ -765,6 +763,8 @@ body {
       display: block; }
   .principal-row .first .vertical-texture {
     display: none; }
+  .principal-row .first, .principal-row .second {
+    height: auto; }
 
   .we-love .title, .we-love .subtitle {
     display: none; }

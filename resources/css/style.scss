@@ -840,9 +840,6 @@ body{
 				}
 			}
 		}
-		.first,.second{
-			height: auto;
-		}
 	}
 	.principal-row,.services,.we-love,.reasons,.real-opinions,.contact,.end{
 		position:relative;
@@ -1069,6 +1066,10 @@ body{
 			.vertical-texture{
 				display: none;
 			}
+		}
+		
+		.first,.second{
+			height: auto;
 		}
 	}
 
