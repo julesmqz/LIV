@@ -347,7 +347,7 @@ $(document).ready(function() {
 	}, '-=0.7');
 
 	tl.to(elements[32], 0.7, {
-		bottom: -80,
+		bottom: 0,
 		opacity: 1
 	});
 
@@ -411,18 +411,23 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
-	//tl.seek(28);
+	//tl.seek(25);
 
 	tl.pause();
+
+	// if inner width is tablet go to the very end of the anim
+	// if( window.innerWidth < 991 ){
+	// 	tl.seek(100,false);
+	// }
 
 	// mouse scrolling controls animation
 	$(window).on('mousewheel', function() {
 		let yPos = event.deltaY;
 
-		if (yPos > 5) {
+		if (yPos > 5 && window.innerWidth > 991) {
 			console.log('Animation is playing');
 			tl.play();
-		} else if (yPos < -5) {
+		} else if (yPos < -5 && window.innerWidth > 991) {
 			console.log('Animation is backwards');
 			tl.reverse();
 		} else {

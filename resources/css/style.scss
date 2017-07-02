@@ -59,6 +59,7 @@ body{
     vertical-align: middle;
     width: 100%;
     text-align: center;
+    cursor:pointer;
     span{
 		background: url('../imgs/contact-button.png');
     	background-size: contain;
@@ -125,7 +126,6 @@ body{
 		height: 100vh;
 		.horizontal-texture{
 			width:100%;
-			max-height:50px;
 			display:none;
 		}
 		.main{
@@ -283,10 +283,12 @@ body{
 
 .complete-form{
 	.form-body{
+		z-index: $z-index + 1;
 		.form-input{
 			text-align:center;
 			padding:0 50px;
 			opacity:0;
+			z-index: $z-index + 1;
 			label{
 				font-size:18px;
 				color:#575858;
@@ -319,8 +321,12 @@ body{
 	}
 	.form-button{
 		position:relative;
-		bottom:-1000;
-		opacity:0;
+		z-index: $z-index + 2;
+		top:60px;
+		.button-contact{
+			bottom:-1000;
+			opacity:0;
+		}
 	}
 }
 
@@ -406,6 +412,7 @@ body{
 				background:none;
 				cursor: normal;
 				.arrow{
+					opacity: 0.5;
 					cursor:pointer;
 					background: url('../imgs/carousel-control.png');
 					background-repeat:no-repeat;
@@ -452,7 +459,7 @@ body{
 				text-align: center;
 				opacity:0;
 				img{
-					margin-bottom:20px;
+					margin:0 auto 20px auto;
 				}
 				.title{
 					padding:0;
@@ -611,6 +618,469 @@ body{
 					padding: 10% 20% 10% 5%;
 				}
 		    }
+		}
+	}
+}
+
+/* Small Desktops */
+@media (min-width: 992px) and (max-width:1199px) {
+	.principal-row{
+		.first{
+			.txt{
+				.title{
+				    font-size: 100px;
+				}
+				.subtitle{
+					font-size: 45px;
+				}
+			}
+		}
+	}
+	.menu-launcher{
+		.logo-liv{
+			max-width:50px;
+		}
+	}
+	.our-services,.why-us,.form-title{
+		height:$title-height - 5;
+		.main{
+			font-size:50px;
+			line-height:100px;
+		}
+		.background{
+			.one,.two{
+			    font-size:70px;
+			    line-height: 60px;
+			}
+		}
+	}
+
+	.services{
+		.all-services{
+			.service-description{
+				.first,.second{
+					.txt{
+						width:95%;
+						padding-left:15%;
+						.title{
+							font-size:20px;
+						}
+						.main-title{
+							font-size:35px;
+							line-height:60px;
+						}
+						.subtitle{
+							font-size:14px;
+						}
+					}
+			    }
+			}
+			.service-description:nth-child(odd){
+			    .second{
+					&.animate-fifth-service-two{
+						.txt{
+							.main-title{
+								font-size:35px;
+								line-height:60px;
+							}
+						}
+					}
+			    }
+			}
+		}
+	}
+
+	.reasons{
+		.all-reasons{
+			height:calc(100vh - #{$title-height} - 18vh);
+			.options{
+				.option{
+					.img-responsive,.title,.text{
+						margin:auto;
+					}
+					.img-responsive{
+						max-width:100px;
+					}
+				}
+			}
+		}
+	}
+	.complete-form{
+		.form-button{
+			top:50px;
+		}
+	}
+}
+
+/* Tablets  and phones*/
+@media (max-width:991px) {
+	body{
+		overflow:auto;
+	}
+
+	#main-content{
+		margin:0;
+		padding:0;
+	}
+
+	.button-contact{
+		display: none;
+		&.hide{
+			display:block;
+		}
+	}
+
+	.menu-launcher{
+		.logo-liv{
+			max-width:50px;
+		}
+	}
+
+	.our-services,.why-us,.form-title{
+		height:$title-height - 5;
+		.main{
+			font-size:50px;
+			line-height:100px;
+		}
+		.background{
+			.one,.two{
+			    font-size:70px;
+			    line-height: 60px;
+			}
+		}
+		.main,.background{
+			left: 0;
+		    opacity: 1;
+		}
+	}
+	.why-us{
+		.main{
+			font-size:40px;
+			line-height:110px;
+		}
+	}
+
+	.principal-row{
+		.first{
+			.txt{
+				text-align: center;
+			}
+		}
+		.second{
+			.quote{
+				.number{
+					font-size:30px;
+				}
+			}
+		}
+	}
+	.principal-row,.services,.we-love,.reasons,.real-opinions,.contact,.end{
+		position:relative;
+		top:auto;
+		height: auto;
+		margin:0;
+		padding:0;
+	}
+
+	.we-love{
+		flex:none;
+		margin:0;
+		.title,.subtitle{
+			left: auto;
+		}
+		.logo-liv,.love{
+			top:auto;
+			opacity:1;
+		}
+		.title{
+			opacity:0.98;
+			font-size:124px;
+			top:-30px;
+		}
+		.subtitle{
+			opacity: 0.82;
+			top:100px;
+		}
+	}
+
+	.services{
+		.all-services{
+			height:auto;
+			.service-description{
+				position:relative;
+				flex:none;
+				padding-right: 0;
+				margin-bottom: 50px;
+				height: auto;
+				.first,.second{
+					height:auto;
+					margin:auto;
+					position:relative;
+					.service{
+						margin:auto;
+					}
+					.txt{
+						width: 95%;
+					    padding: 5px;
+    					margin: auto;
+					}
+					.vertical-texture{
+						left:auto;
+						right:0;
+						background:white;
+					}
+			    }
+			    .first,.second{
+			    	top:auto;
+			    	opacity:1;
+			    	left:auto;
+			    	&.animate-second-service-two,&.animate-fourth-service-two{
+			    		display:none;
+			    	}
+			    	&.hide{
+			    		display: block !important;
+			    	}
+			    }
+			}
+			.service-description:nth-child(even){
+				.second{
+			    	background-color:$second-bg-color;
+			    	.vertical-texture{
+			    		left:auto;
+			    		left:0;
+			    		background: white;
+			    	}
+			    }
+
+			    .first{
+					.txt{
+						padding: 5px;
+					}
+			    }
+			}
+		}
+	}
+
+	.reasons{
+		.all-reasons{
+			height: auto;
+		    .options{
+				.animate-option-1,.animate-option-2,.animate-option-3,.animate-option-4{
+					left:auto;
+				}
+				.option{
+					opacity:1;
+				}
+			}
+		}
+	}
+
+	.real-opinions{
+		display:block;
+		.opinions{
+			top:auto;
+			opacity: 1;
+			.carousel{
+				.carousel-inner{
+					.item{
+						.opinion-text{
+							padding:84px 10px 0 400px;
+						    .actual-opinion{
+						    	font-size: 20px;
+						    }
+						    .quote-open{
+						    	top:140px;
+						    	left:355px;
+						    }
+						}
+					}
+				}
+				.right,.left{
+					opacity:1;
+					background:none;
+					cursor: normal;
+					.arrow{
+						cursor:pointer;
+						background: url('../imgs/carousel-control.png');
+						background-repeat:no-repeat;
+						background-size:cover;
+					}
+				}
+				.left{
+					.arrow{
+						left: -8%;
+					    width: 50px;
+					    height: 50px;
+					    top: 55%;
+					    line-height:45px;
+					}
+				}
+				.right{
+					.arrow{
+						right: -8%;
+					    width: 50px;
+					    height: 50px;
+					    top: 55%;
+					    line-height:45px;
+					}
+				}
+			}
+		}
+	}
+
+	.complete-form{
+		.form-body{
+			.form-input{
+				opacity:1;
+				left:auto !important;
+			}
+		}
+		.form-button{
+			top:0;
+			height:65px;
+			.button-contact{
+				bottom:auto;
+				opacity:1;
+				display:block;
+			}
+		}
+	}
+	.end{
+		margin-top:20px;
+		[class^="animate"] {
+		    position:relative;
+		    opacity:1;
+		}
+		.animate-final-middle{
+			top: auto;
+		}
+
+		.animate-final-left{
+			left: auto;
+		}
+		.animate-final-right{
+			left:auto;
+		}
+	}
+
+}
+
+/* Only phones */
+@media (max-width:767px) {
+	.principal-row{
+		.second{
+			height:auto;
+			.main{
+				position: relative;
+				margin:auto;
+				left:auto;
+				top:-50px;
+			}
+			.quote{
+				display:none;
+			}
+			.horizontal-texture{
+				display:block;
+			}
+		}
+	}
+
+	.we-love{
+		.title,.subtitle{
+			display:none;
+		}
+		.logo-liv{
+			display:block;
+			position:absolute;
+			left: calc(60% - 100px);
+		    width: 100px;
+		    top: 25%;
+		}
+	}
+
+	.our-services,.why-us,.form-title{
+		height:auto;
+		.main{
+			height:auto;
+		}
+	}
+
+	.why-us{
+		.background{
+			.one,.two{
+				font-size:60px;
+				line-height:70px;
+			}
+		}
+	}
+
+	.services{
+		.all-services{
+			.service-description{
+				.first,.second{
+					.vertical-texture{
+						display:none;
+					}
+					img.horizontal-texture{
+						display: block;
+						max-width: 100%;
+						position:relative;
+						top:-2px;
+					}
+			    }
+			}
+		}
+	}
+
+	.real-opinions{
+		.opinions{
+			.carousel{
+				.carousel-inner{
+					.item{
+						.big{
+							display:none;
+						}
+						.small{
+							display:block;
+							background:white;
+							.author-txt{
+								padding:0;
+							}
+						}
+						.opinion-text{
+							display:flex;
+							flex-wrap:wrap;
+							width: 100%;
+						    height: auto;
+						    position: relative;
+						    padding: 0 30px;
+						    left: auto;
+						    bottom: auto;
+						    margin-bottom:20px;
+						    .title{
+						    	text-align: center;
+						    	width:100%;
+						    	margin-bottom:30px;
+						    }
+						    .quote-open{
+						    	position:relative;
+						    	top:-10px;
+						    	left:auto;
+						    	margin-right:10px;
+						    }
+						    .opinion-img{
+						    	position:relative;
+    							bottom: -20px;
+						    }
+						    .inner-div{
+						    	position:relative;
+						    	bottom:0;
+						    	top:80%;
+						    }
+						}
+					}
+				}
+			}
 		}
 	}
 }
