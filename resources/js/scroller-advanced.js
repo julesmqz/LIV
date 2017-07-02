@@ -45,7 +45,7 @@ $(document).ready(function() {
 	];
 
 	//instantiate a TimelineLite    
-	var tl = new TimelineLite();
+	const tl = new TimelineLite();
 
 	//home page
 	tl.to(elements[0], 0.7, {
@@ -411,7 +411,7 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
-	//tl.seek(25);
+	tl.seek(25);
 
 	tl.pause();
 
@@ -420,26 +420,25 @@ $(document).ready(function() {
 	// 	tl.seek(100,false);
 	// }
 
-	//window.addEventListener('scroll', shouldWeAnimate);
+	window.addEventListener('scroll', function(){
+		tl.play();
+	});
 
 	// mouse scrolling controls animation
-	$(window).on('scroll, touchstart, touchend, touchmove, mousewheel', shouldWeAnimate);
+	$(window).on('mousewheel', function() {
+		let yPos = event.deltaY;
 
-	function shouldWeAnimate() {
-		var yPos = event.deltaY;
-		alert(yPos);
-
-		if (yPos > 0 && window.innerWidth > 991) {
+		if (yPos > 5 && window.innerWidth > 991) {
 			console.log('Animation is playing');
 			tl.play();
-		} else if (yPos < -0 && window.innerWidth > 991) {
+		} else if (yPos < -5 && window.innerWidth > 991) {
 			console.log('Animation is backwards');
 			tl.reverse();
 		} else {
 			console.log('Animation is gonna pause');
 			tl.pause();
 		}
-	}
+	});
 
 	/* FORM SEND */
 	$('[data-send-form]').click(function() {
