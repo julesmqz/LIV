@@ -411,7 +411,7 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
-	tl.seek(25);
+	//tl.seek(25);
 
 	tl.pause();
 
