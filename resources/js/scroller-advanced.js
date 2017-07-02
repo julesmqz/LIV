@@ -411,7 +411,7 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
-	tl.seek(25);
+	//tl.seek(25);
 
 	tl.pause();
 
@@ -423,7 +423,7 @@ $(document).ready(function() {
 	window.addEventListener('scroll', shouldWeAnimate);
 
 	// mouse scrolling controls animation
-	$(window).on('scroll, touchstart, touchend, touchmove, mousewheel', shouldWeAnimate;
+	$(window).on('scroll, touchstart, touchend, touchmove, mousewheel', shouldWeAnimate);
 
 	function shouldWeAnimate() {
 		let yPos = event.deltaY;
