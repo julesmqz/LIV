@@ -712,6 +712,7 @@ body{
 
 	.services{
 		.all-services{
+			padding-right: 0;
 			.service-description{
 				.first,.second{
 					.txt{
@@ -1067,7 +1068,7 @@ body{
 				display: none;
 			}
 		}
-		
+
 		.first,.second{
 			height: auto;
 		}
