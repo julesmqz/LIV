@@ -45,7 +45,7 @@ $(document).ready(function() {
 	];
 
 	//instantiate a TimelineLite    
-	const tl = new TimelineLite();
+	var tl = new TimelineLite();
 
 	//home page
 	tl.to(elements[0], 0.7, {
@@ -420,13 +420,14 @@ $(document).ready(function() {
 	// 	tl.seek(100,false);
 	// }
 
-	window.addEventListener('scroll', shouldWeAnimate);
+	//window.addEventListener('scroll', shouldWeAnimate);
 
 	// mouse scrolling controls animation
 	$(window).on('scroll, touchstart, touchend, touchmove, mousewheel', shouldWeAnimate);
 
 	function shouldWeAnimate() {
-		let yPos = event.deltaY;
+		var yPos = event.deltaY;
+		alert(yPos);
 
 		if (yPos > 5 && window.innerWidth > 991) {
 			console.log('Animation is playing');
