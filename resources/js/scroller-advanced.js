@@ -421,7 +421,7 @@ $(document).ready(function() {
 	// }
 
 	// mouse scrolling controls animation
-	$(window).on('touchstart, touchend, touchmove, mousewheel', function() {
+	$(window).on('scroll, touchstart, touchend, touchmove, mousewheel', function() {
 		let yPos = event.deltaY;
 
 		if (yPos > 5 && window.innerWidth > 991) {
