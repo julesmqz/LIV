@@ -222,7 +222,6 @@ body {
   padding-top: 50px; }
   .end .inner {
     display: flex;
-    flex-wrap: wrap;
     height: 100%;
     margin: 0; }
   .end .number span {
@@ -259,8 +258,6 @@ body {
   .end .img-2 {
     bottom: 0;
     right: 0; }
-    .end .img-2 img {
-      max-width: 90%; }
   .end [class^="animate"] {
     position: relative;
     opacity: 0; }
