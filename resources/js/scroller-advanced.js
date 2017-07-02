@@ -453,7 +453,7 @@ $(document).ready(function() {
 			} else if (touchStartY < touchEndY - 5) {
 				tl.reverse()
 			}else{
-				//tl.pause();
+				tl.pause();
 			}
 		}, false);
 	} else {
