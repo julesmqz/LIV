@@ -411,7 +411,7 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
-	//tl.seek(25);
+	tl.seek(25);
 
 	tl.pause();
 
@@ -421,8 +421,6 @@ $(document).ready(function() {
 	// }
 
 	window.addEventListener('scroll', function() { alert("Scrolled"); });
-	// or
-	$(window).scroll(function() { alert("Scrolled"); });
 
 	// mouse scrolling controls animation
 	$(window).on('scroll, touchstart, touchend, touchmove, mousewheel', function() {
