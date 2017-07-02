@@ -613,6 +613,8 @@ body {
     text-align: center; }
   .principal-row .second .quote .number {
     font-size: 30px; }
+  .principal-row .first, .principal-row .second {
+    height: auto; }
 
   .principal-row, .services, .we-love, .reasons, .real-opinions, .contact, .end {
     position: relative;
