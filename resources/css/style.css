@@ -216,11 +216,11 @@ body {
     position: relative;
     opacity: 0; }
   .end .animate-final-middle {
-    top: -1000; }
+    top: -2000; }
   .end .animate-final-left {
-    left: -1000; }
+    left: -2000; }
   .end .animate-final-right {
-    left: 1000; }
+    left: 2000; }
 
 .complete-form .form-body {
   z-index: 51; }
