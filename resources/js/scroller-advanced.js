@@ -420,10 +420,12 @@ $(document).ready(function() {
 	// 	tl.seek(100,false);
 	// }
 
-	window.addEventListener('scroll', function() { alert("Scrolled"); });
+	window.addEventListener('scroll', shouldWeAnimate);
 
 	// mouse scrolling controls animation
-	$(window).on('scroll, touchstart, touchend, touchmove, mousewheel', function() {
+	$(window).on('scroll, touchstart, touchend, touchmove, mousewheel', shouldWeAnimate;
+
+	function shouldWeAnimate() {
 		let yPos = event.deltaY;
 
 		if (yPos > 5 && window.innerWidth > 991) {
@@ -436,7 +438,7 @@ $(document).ready(function() {
 			console.log('Animation is gonna pause');
 			tl.pause();
 		}
-	});
+	}
 
 	/* FORM SEND */
 	$('[data-send-form]').click(function() {
