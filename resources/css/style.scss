@@ -578,10 +578,10 @@ body{
 
 .services{
 	.all-services{
-		padding:0 40px;
+		padding:0;
 		height:calc( 100vh - #{$title-height}  - 50px);
-		max-width: 97%;
 		.service-description{
+			margin:auto 20px;
 			display: flex;
 		    flex-wrap: wrap;
 		    height: 100%;
@@ -712,7 +712,6 @@ body{
 
 	.services{
 		.all-services{
-			padding-right: 0;
 			.service-description{
 				.first,.second{
 					.txt{

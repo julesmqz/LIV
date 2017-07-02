@@ -455,10 +455,10 @@ body {
     opacity: 0; }
 
 .services .all-services {
-  padding: 0 40px;
-  height: calc( 100vh - 30vh  - 50px);
-  max-width: 97%; }
+  padding: 0;
+  height: calc( 100vh - 30vh  - 50px); }
   .services .all-services .service-description {
+    margin: auto 20px;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -542,21 +542,19 @@ body {
       font-size: 70px;
       line-height: 60px; }
 
-  .services .all-services {
-    padding-right: 0; }
-    .services .all-services .service-description .first .txt, .services .all-services .service-description .second .txt {
-      width: 95%;
-      padding-left: 15%; }
-      .services .all-services .service-description .first .txt .title, .services .all-services .service-description .second .txt .title {
-        font-size: 20px; }
-      .services .all-services .service-description .first .txt .main-title, .services .all-services .service-description .second .txt .main-title {
-        font-size: 35px;
-        line-height: 60px; }
-      .services .all-services .service-description .first .txt .subtitle, .services .all-services .service-description .second .txt .subtitle {
-        font-size: 14px; }
-    .services .all-services .service-description:nth-child(odd) .second.animate-fifth-service-two .txt .main-title {
+  .services .all-services .service-description .first .txt, .services .all-services .service-description .second .txt {
+    width: 95%;
+    padding-left: 15%; }
+    .services .all-services .service-description .first .txt .title, .services .all-services .service-description .second .txt .title {
+      font-size: 20px; }
+    .services .all-services .service-description .first .txt .main-title, .services .all-services .service-description .second .txt .main-title {
       font-size: 35px;
       line-height: 60px; }
+    .services .all-services .service-description .first .txt .subtitle, .services .all-services .service-description .second .txt .subtitle {
+      font-size: 14px; }
+  .services .all-services .service-description:nth-child(odd) .second.animate-fifth-service-two .txt .main-title {
+    font-size: 35px;
+    line-height: 60px; }
 
   .reasons .all-reasons {
     height: calc(100vh - 30vh - 18vh); }
