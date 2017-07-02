@@ -432,7 +432,12 @@ $(document).ready(function() {
 	// }
 
 	// mouse scrolling controls animation
-	if (Modernizr.touch) {
+	if (Modernizr.touch && window.innerWidth > 991) {
+
+		// to know when user has finished moving
+		var temp = 0;
+		var timer = 0;
+
 		// Determining swipe direction
 		// http://stackoverflow.com/a/22257774/1064325
 		var touchStartY;
@@ -447,13 +452,20 @@ $(document).ready(function() {
 		}, false);
 
 		document.addEventListener('touchend', function(e) {
+			if (timer) {
+				clearTimeout(timer);
+			}
+			temp = Math.floor(Date.now());
+			timer = setTimeout(function() {
+				temp = 0;
+				tl.pause();
+			}, 55);
+
 			var touchEndY = e.changedTouches[0].clientY;
 			if (touchStartY > touchEndY + 5) {
 				tl.play()
 			} else if (touchStartY < touchEndY - 5) {
 				tl.reverse()
-			}else{
-				tl.pause();
 			}
 		}, false);
 	} else {
