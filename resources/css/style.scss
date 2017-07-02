@@ -320,6 +320,9 @@ body{
 	.img-2{
 		bottom:0;
 		right:0;
+		img{
+			max-width: 90%;
+		}
 	}
 	[class^="animate"] {
 	    position:relative;
