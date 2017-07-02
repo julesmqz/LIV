@@ -460,7 +460,6 @@ body {
   .services .all-services .service-description {
     margin: auto 20px;
     display: flex;
-    flex-wrap: wrap;
     height: 100%;
     position: absolute; }
     .services .all-services .service-description .first .service, .services .all-services .service-description .second .service {
