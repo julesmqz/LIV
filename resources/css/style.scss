@@ -86,9 +86,13 @@ body{
 }
 .menu-launcher{
 	position:absolute;
-	top:25px;
-	left:20px;
+	top:20px;
+	left:15px;
 	z-index:$z-index + 10;
+	padding:5px;
+	&:hover{
+		opacity:1 !important;
+	}
 	.logo-liv{
 		max-width:100px;
 		margin-right: 25px;
@@ -98,7 +102,6 @@ body{
 	}
 	.animate-menu-show{
 		display:none;
-		margin-top: 25px;
 		cursor: pointer;
 	}
 }

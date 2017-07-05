@@ -47,16 +47,7 @@
 			"file": "index.jade",
 			"settings":
 			{
-				"buffer_size": 1159,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 1398,
+				"buffer_size": 15820,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -65,7 +56,7 @@
 			"file": "resources/css/style.scss",
 			"settings":
 			{
-				"buffer_size": 1268,
+				"buffer_size": 18800,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -130,10 +121,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 370.0,
-		"last_filter": "sass",
+		"height": 87.0,
+		"last_filter": "build",
 		"selected_items":
 		[
+			[
+				"build",
+				"Build: New Build System"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
 			[
 				"sass",
 				"SassBeautify"
@@ -145,10 +144,6 @@
 			[
 				"install pa",
 				"Package Control: Install Package"
-			],
-			[
-				"build",
-				"Build With: Jade"
 			],
 			[
 				"install",
@@ -208,13 +203,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/julesmqz/Workspace/liv",
-		"/Users/julesmqz/Workspace/liv/resources",
-		"/Users/julesmqz/Workspace/liv/resources/css",
-		"/Users/julesmqz/Workspace/liv/resources/imgs"
+		"/Users/jules/Workspace/LIV"
 	],
 	"file_history":
 	[
+		"/Users/jules/Workspace/LIV/index.html",
+		"/Users/jules/Library/Application Support/Sublime Text 3/Packages/User/JADE2.sublime-build",
+		"/Users/jules/Library/Application Support/Sublime Text 3/Packages/User/jade.sublime-build",
 		"/Users/julesmqz/Workspace/liv/index.html",
 		"/Users/julesmqz/Workspace/liv/resources/css/style.css",
 		"/Users/julesmqz/Library/Application Support/Sublime Text 3/Packages/User/customJade.sublime-build",
@@ -267,6 +262,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".service",
+			"col-md-4",
+			".col-md-8",
+			"sm",
+			".slide-right",
+			".slide-left",
+			"slide-down",
+			"animation-element",
+			"sm",
 			"products",
 			"item",
 			"modal",
@@ -299,15 +303,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1159,
+						"buffer_size": 15820,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1114,
-								1114
+								4926,
+								4926
 							]
 						],
 						"settings":
@@ -316,7 +320,8 @@
 							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -327,52 +332,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1398,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "resources/css/style.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1268,
+						"buffer_size": 18800,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								703,
-								703
+								2873,
+								2873
 							]
 						],
 						"settings":
@@ -381,13 +353,14 @@
 							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 92.0,
+						"translation.y": 2291.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

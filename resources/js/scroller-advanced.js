@@ -44,12 +44,14 @@ $(document).ready(function() {
 		$('.animate-final-right'),
 		$('.animate-menu-hide'),
 		$('.animate-menu-show'),
+		$('.animate-menu-launcher'),
 	];
 
 	//instantiate a TimelineLite    
 	const tl = new TimelineLite();
 
 	//home page
+	tl.addLabel('home');
 	tl.to(elements[0], 0.7, {
 		left: 700,
 		opacity: 0
@@ -63,9 +65,15 @@ $(document).ready(function() {
 		display: 'none'
 	}, '-=0.7');
 
+	tl.to(elements[38], 0.1, {
+		opacity: 0.3
+	},'-=0.1');
+
 	tl.to(elements[37], 0.1, {
 		display: 'inline'
 	});
+
+	
 
 
 	// our services
@@ -91,6 +99,8 @@ $(document).ready(function() {
 		left: 0,
 		opacity: 1
 	}, '-=0.7');
+
+	tl.addLabel('services');
 
 	tl.to(elements[4], 0.7, {
 		top: 1000,
@@ -271,6 +281,8 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
+	tl.addLabel('why-us');
+
 	// dissapear title and buttons
 
 	tl.to(elements[21], 0.7, {
@@ -362,13 +374,14 @@ $(document).ready(function() {
 		opacity: 1
 	});
 
+	tl.addLabel('contact');
 
 	// dissapear form and title
 
 	tl.to(elements[32], 0.7, {
 		bottom: -1000,
 		opacity: 0
-	}, '+=2');
+	}, '+=0.5');
 
 	tl.to(elements[27], 0.7, {
 		left: -1000,
@@ -398,7 +411,7 @@ $(document).ready(function() {
 	tl.to(elements[25], 0.7, {
 		left: 1000,
 		opacity: 0
-	});
+	},'-=0.7');
 
 	tl.to(elements[26], 0.7, {
 		left: -1000,
@@ -469,18 +482,29 @@ $(document).ready(function() {
 			}
 		}, false);
 	} else {
-		$(window).on('mousewheel', function() {
+		// to know when user has finished moving
+		var temp = 0;
+		var timer = 0;
+
+		$(window).on('mousewheel', function( event ) {
 			let yPos = event.deltaY;
 
-			if (yPos > 5 && window.innerWidth > 991) {
+			if (timer) {
+				clearTimeout(timer);
+			}
+			temp = Math.floor(Date.now());
+			timer = setTimeout(function() {
+				console.log('Anmation is gonna pause');
+				temp = 0;
+				tl.pause();
+			}, 1500);
+
+			if (yPos < -5 && window.innerWidth > 991) {
 				console.log('Animation is playing');
 				tl.play();
-			} else if (yPos < -5 && window.innerWidth > 991) {
+			} else if (yPos > 5 && window.innerWidth > 991) {
 				console.log('Animation is backwards');
 				tl.reverse();
-			} else {
-				console.log('Animation is gonna pause');
-				tl.pause();
 			}
 		});
 	}
@@ -522,16 +546,16 @@ $(document).ready(function() {
 		if (window.innerWidth > 991) {
 			switch (d.data('scroll')) {
 				case 'home':
-					tl.seek(0);
+					tl.seek('home');
 					break;
 				case 'services':
-					tl.seek(2.2);
+					tl.seek('services');
 					break;
 				case 'why-us':
-					tl.seek(19.8);
+					tl.seek('why-us');
 					break;
 				case 'contact':
-					tl.seek(27.8);
+					tl.seek('contact');
 					break;
 				default:
 					break;
