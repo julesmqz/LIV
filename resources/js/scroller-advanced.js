@@ -105,7 +105,7 @@ $(document).ready(function() {
 	tl.to(elements[4], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=1');
+	}, '+=2.5');
 
 	tl.to(elements[5], 0.7, {
 		left: -1000,
@@ -126,7 +126,7 @@ $(document).ready(function() {
 	tl.to(elements[6], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=1');
+	}, '+=2.5');
 
 	tl.to(elements[7], 0.7, {
 		left: -1000,
@@ -147,7 +147,7 @@ $(document).ready(function() {
 	tl.to(elements[8], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=1');
+	}, '+=2.5');
 
 	tl.to(elements[9], 0.7, {
 		left: -1000,
@@ -168,7 +168,7 @@ $(document).ready(function() {
 	tl.to(elements[10], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=1');
+	}, '+=2.5');
 
 	tl.to(elements[11], 0.7, {
 		left: -1000,
@@ -189,7 +189,7 @@ $(document).ready(function() {
 	tl.to(elements[12], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=1');
+	}, '+=2.5');
 
 	tl.to(elements[13], 0.7, {
 		left: -1000,
@@ -544,22 +544,7 @@ $(document).ready(function() {
 		let d = $(this);
 		let noMenu = d.data('noMenu');
 		if (window.innerWidth > 991) {
-			switch (d.data('scroll')) {
-				case 'home':
-					tl.seek('home');
-					break;
-				case 'services':
-					tl.seek('services');
-					break;
-				case 'why-us':
-					tl.seek('why-us');
-					break;
-				case 'contact':
-					tl.seek('contact');
-					break;
-				default:
-					break;
-			}
+			tl.seek(d.data('scroll'));
 		} else {
 			$('html, body').animate({
 				scrollTop: $("#" + d.data('scroll')).offset().top
