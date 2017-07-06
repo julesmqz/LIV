@@ -272,6 +272,19 @@ body {
 
 .complete-form .form-body {
   z-index: 51; }
+  .complete-form .form-body .number {
+    position: absolute;
+    right: -1000;
+    top: calc(30vh - 40px);
+    padding-right: 40px; }
+    .complete-form .form-body .number span {
+      color: #ff9012;
+      font-size: 24px; }
+    .complete-form .form-body .number img {
+      width: 36px;
+      height: 36px;
+      margin-top: -12px;
+      margin-right: 10px; }
   .complete-form .form-body .form-input {
     text-align: center;
     padding: 0 50px;
@@ -399,7 +412,7 @@ body {
   height: calc(100vh - 30vh);
   display: flex;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: flex-start; }
   .reasons .all-reasons .options .animate-option-1, .reasons .all-reasons .options .animate-option-2 {
     left: -1000; }
   .reasons .all-reasons .options .animate-option-3, .reasons .all-reasons .options .animate-option-4 {

@@ -45,6 +45,7 @@ $(document).ready(function() {
 		$('.animate-menu-hide'),
 		$('.animate-menu-show'),
 		$('.animate-menu-launcher'),
+		$('.animate-number-form'),
 	];
 
 	//instantiate a TimelineLite    
@@ -344,6 +345,11 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
+	tl.to(elements[39], 0.7, {
+		opacity:1,
+		right:0
+	},'-=0.7');
+
 	tl.to(elements[27], 0.7, {
 		left: 0,
 		opacity: 1
@@ -381,7 +387,7 @@ $(document).ready(function() {
 	tl.to(elements[32], 0.7, {
 		bottom: -1000,
 		opacity: 0
-	}, '+=0.5');
+	}, '+=0.7');
 
 	tl.to(elements[27], 0.7, {
 		left: -1000,
@@ -418,22 +424,27 @@ $(document).ready(function() {
 		opacity: 0
 	}, '-=0.7');
 
+	tl.to(elements[39], 0.7, {
+		opacity:0,
+		right:1000
+	},'-=0.7');
+
 	/* Final section */
 
-	tl.to(elements[33], 0.7, {
+	tl.to(elements[33], 0.2, {
 		left: 0,
 		opacity: 1
 	});
 
-	tl.to(elements[34], 0.7, {
+	tl.to(elements[34], 0.2, {
 		top: 0,
 		opacity: 1
-	}, '-=0.7');
+	}, '-=0.2');
 
-	tl.to(elements[35], 0.7, {
+	tl.to(elements[35], 0.2, {
 		left: 0,
 		opacity: 1
-	}, '-=0.7');
+	}, '-=0.2');
 
 	//tl.seek(25);
 
@@ -494,10 +505,10 @@ $(document).ready(function() {
 			}
 			temp = Math.floor(Date.now());
 			timer = setTimeout(function() {
-				console.log('Anmation is gonna pause');
+				console.log('Animation is gonna pause');
 				temp = 0;
 				tl.pause();
-			}, 1500);
+			}, 1000);
 
 			if (yPos < -5 && window.innerWidth > 991) {
 				console.log('Animation is playing');
@@ -538,6 +549,12 @@ $(document).ready(function() {
 
 	});
 
+	/* focus on input */
+	$('.form-input').focusin( function() { // assign scroll event listener
+		tl.seek('contact');
+		tl.pause();
+	});
+
 	/* Scroll to certain div */
 	$(document).on('click', '[data-scroll]', function() {
 		tl.pause();
@@ -545,6 +562,7 @@ $(document).ready(function() {
 		let noMenu = d.data('noMenu');
 		if (window.innerWidth > 991) {
 			tl.seek(d.data('scroll'));
+			tl.pause();
 		} else {
 			$('html, body').animate({
 				scrollTop: $("#" + d.data('scroll')).offset().top
