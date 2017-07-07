@@ -538,6 +538,12 @@ body {
       padding: 10% 20% 10% 5%; }
 
 /* Small Desktops */
+@media (min-width: 992px) {
+  .services .all-services .service-description:nth-child(odd) .second {
+    border-left: 0; }
+  .services .all-services .service-description:nth-child(even) .first {
+    border-right: 0; } }
+/* Small Desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   .principal-row .first .txt .title {
     font-size: 100px; }
@@ -600,12 +606,12 @@ body {
 
   .menu-launcher {
     position: fixed; }
-    .menu-launcher .logo-liv {
-      max-width: 50px;
-      display: none; }
     .menu-launcher .animate-menu-show {
       display: block;
       margin-top: 0; }
+    .menu-launcher .logo-liv {
+      max-width: 50px;
+      display: none; }
 
   .menu {
     position: fixed; }

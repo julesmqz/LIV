@@ -49,7 +49,7 @@ $(document).ready(function() {
 	];
 
 	//instantiate a TimelineLite    
-	const tl = new TimelineLite();
+	const tl = new TimelineLite({'paused':true});
 
 	//home page
 	tl.addLabel('home');
@@ -101,12 +101,16 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
+	tl.add(function(){
+		tl.pause();
+	});
+
 	tl.addLabel('services');
 
 	tl.to(elements[4], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=2.5');
+	});
 
 	tl.to(elements[5], 0.7, {
 		left: -1000,
@@ -124,10 +128,14 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
+	tl.add(function(){
+		tl.pause();
+	});
+
 	tl.to(elements[6], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=2.5');
+	});
 
 	tl.to(elements[7], 0.7, {
 		left: -1000,
@@ -145,10 +153,14 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
+	tl.add(function(){
+		tl.pause();
+	});
+
 	tl.to(elements[8], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=2.5');
+	});
 
 	tl.to(elements[9], 0.7, {
 		left: -1000,
@@ -166,10 +178,14 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
+	tl.add(function(){
+		tl.pause();
+	});
+
 	tl.to(elements[10], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=2.5');
+	});
 
 	tl.to(elements[11], 0.7, {
 		left: -1000,
@@ -187,10 +203,14 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
+	tl.add(function(){
+		tl.pause();
+	});
+
 	tl.to(elements[12], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=2.5');
+	});
 
 	tl.to(elements[13], 0.7, {
 		left: -1000,
@@ -282,6 +302,10 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
+	tl.add(function(){
+		tl.pause();
+	});
+
 	tl.addLabel('why-us');
 
 	// dissapear title and buttons
@@ -289,7 +313,7 @@ $(document).ready(function() {
 	tl.to(elements[21], 0.7, {
 		left: 1000,
 		opacity: 0
-	}, '+=2');
+	});
 
 	tl.to(elements[22], 0.7, {
 		left: -1000,
@@ -327,10 +351,14 @@ $(document).ready(function() {
 		opacity: 1
 	});
 
+	tl.add(function(){
+		tl.pause();
+	});
+
 	tl.to(elements[24], 0.7, {
 		top: 1000,
 		opacity: 0
-	}, '+=1');
+	});
 
 	/* Contact us */
 
@@ -380,6 +408,10 @@ $(document).ready(function() {
 		opacity: 1
 	});
 
+	tl.add(function(){
+		tl.pause();
+	});
+
 	tl.addLabel('contact');
 
 	// dissapear form and title
@@ -387,7 +419,7 @@ $(document).ready(function() {
 	tl.to(elements[32], 0.7, {
 		bottom: -1000,
 		opacity: 0
-	}, '+=0.7');
+	});
 
 	tl.to(elements[27], 0.7, {
 		left: -1000,
@@ -431,24 +463,20 @@ $(document).ready(function() {
 
 	/* Final section */
 
-	tl.to(elements[33], 0.2, {
+	tl.to(elements[33], 0.7, {
 		left: 0,
 		opacity: 1
 	});
 
-	tl.to(elements[34], 0.2, {
+	tl.to(elements[34], 0.7, {
 		top: 0,
 		opacity: 1
-	}, '-=0.2');
+	}, '-=0.7');
 
-	tl.to(elements[35], 0.2, {
+	tl.to(elements[35], 0.7, {
 		left: 0,
 		opacity: 1
-	}, '-=0.2');
-
-	//tl.seek(25);
-
-	tl.pause();
+	}, '-=0.7');
 
 	// if inner width is tablet go to the very end of the anim
 	// if( window.innerWidth < 991 ){
@@ -493,22 +521,9 @@ $(document).ready(function() {
 			}
 		}, false);
 	} else {
-		// to know when user has finished moving
-		var temp = 0;
-		var timer = 0;
 
 		$(window).on('mousewheel', function( event ) {
 			let yPos = event.deltaY;
-
-			if (timer) {
-				clearTimeout(timer);
-			}
-			temp = Math.floor(Date.now());
-			timer = setTimeout(function() {
-				console.log('Animation is gonna pause');
-				temp = 0;
-				tl.pause();
-			}, 1000);
 
 			if (yPos < -5 && window.innerWidth > 991) {
 				console.log('Animation is playing');
