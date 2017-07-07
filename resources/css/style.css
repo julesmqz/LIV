@@ -577,7 +577,7 @@ body {
     line-height: 60px; }
 
   .reasons .all-reasons {
-    height: calc(100vh - 30vh - 18vh); }
+    top: -10vh; }
     .reasons .all-reasons .options .option .img-responsive, .reasons .all-reasons .options .option .title, .reasons .all-reasons .options .option .text {
       margin: auto; }
     .reasons .all-reasons .options .option .img-responsive {

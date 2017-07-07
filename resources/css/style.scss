@@ -783,7 +783,7 @@ body{
 
 	.reasons{
 		.all-reasons{
-			height:calc(100vh - #{$title-height} - 18vh);
+			top: -10vh;
 			.options{
 				.option{
 					.img-responsive,.title,.text{
