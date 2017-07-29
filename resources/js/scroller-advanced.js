@@ -46,6 +46,7 @@ $(document).ready(function() {
 		$('.animate-menu-show'),
 		$('.animate-menu-launcher'),
 		$('.animate-number-form'),
+		$('.animate-quote'),
 	];
 
 	//instantiate a TimelineLite    
@@ -73,6 +74,10 @@ $(document).ready(function() {
 	tl.to(elements[37], 0.1, {
 		display: 'inline'
 	});
+
+    tl.to(elements[40], 0.1, {
+        display: 'inline'
+    });
 
 	
 
@@ -289,7 +294,7 @@ $(document).ready(function() {
 	}, '-=0.7');
 
 	tl.to(elements[14], 0.7, {
-		opacity: 1
+		opacity: 0.3
 	}, '-=0.7');
 
 	tl.to(elements[20], 0.7, {
@@ -523,7 +528,7 @@ $(document).ready(function() {
 	} else {
 
 		$(window).on('mousewheel', function( event ) {
-			let yPos = event.deltaY;
+			var yPos = event.deltaY;
 
 			if (yPos < -5 && window.innerWidth > 991) {
 				console.log('Animation is playing');
@@ -539,8 +544,8 @@ $(document).ready(function() {
 	/* menu open */
 	$(document).on('click', '.menu-icon', function() {
 		tl.pause();
-		let menu = $('.menu');
-		let options = {
+		var menu = $('.menu');
+		var options = {
 			left: 0
 		}
 
@@ -573,8 +578,8 @@ $(document).ready(function() {
 	/* Scroll to certain div */
 	$(document).on('click', '[data-scroll]', function() {
 		tl.pause();
-		let d = $(this);
-		let noMenu = d.data('noMenu');
+		var d = $(this);
+		var noMenu = d.data('noMenu');
 		if (window.innerWidth > 991) {
 			tl.seek(d.data('scroll'));
 			tl.pause();

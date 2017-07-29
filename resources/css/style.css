@@ -17,7 +17,6 @@ body {
   width: 100%;
   height: 100%;
   background: #ffffff;
-  opacity: 0.2;
   opacity: 0.65;
   z-index: 60;
   display: none; }
@@ -85,6 +84,22 @@ body {
     display: none;
     cursor: pointer; }
 
+.fixed-quote {
+  display: none;
+  color: #575858;
+  position: absolute;
+  right: 39px;
+  top: 25px;
+  font-size: 14px;
+  text-align: right; }
+  .fixed-quote .number {
+    color: #ff9012;
+    font-size: 30px;
+    font-weight: bold; }
+  .fixed-quote .whatsapp {
+    margin-top: -16px;
+    margin-right: 10px; }
+
 .button-contact {
   text-transform: uppercase;
   bottom: 10px;
@@ -93,7 +108,10 @@ body {
   vertical-align: middle;
   width: 100%;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 0.3; }
+  .button-contact:hover {
+    opacity: 1 !important; }
   .button-contact span {
     background: url("../imgs/contact-button.png");
     background-size: contain;
@@ -326,17 +344,15 @@ body {
   align-items: center; }
   .real-opinions .opinions {
     top: -1000;
-    position: relative;
     opacity: 0;
     background-image: linear-gradient(0deg, rgba(60, 233, 230, 0) 0%, rgba(28, 207, 201, 0.4) 100%);
-    padding: 25px 48px 90px 48px;
+    padding: 0 70px;
     position: relative; }
     .real-opinions .opinions .img-bg-opinions {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%; }
+      width: 100%; }
     .real-opinions .opinions .carousel {
       width: 100%; }
       .real-opinions .opinions .carousel .carousel-inner .item {
@@ -345,7 +361,8 @@ body {
           display: none; }
         .real-opinions .opinions .carousel .carousel-inner .item .opinion-img {
           z-index: 5;
-          position: absolute; }
+          position: absolute;
+          max-height: 100%; }
         .real-opinions .opinions .carousel .carousel-inner .item .opinion-text {
           position: absolute;
           width: 100%;
@@ -471,7 +488,7 @@ body {
 
 .services .all-services {
   padding: 0;
-  height: calc( 100vh - 30vh  - 50px); }
+  height: calc(100vh - 30vh - 50px); }
   .services .all-services .service-description {
     margin: auto 20px;
     display: flex;
@@ -479,7 +496,7 @@ body {
     position: absolute; }
     .services .all-services .service-description .first .service, .services .all-services .service-description .second .service {
       z-index: 51;
-      max-height: calc( 100vh - 30vh  - 80px); }
+      max-height: calc(100vh - 30vh - 80px); }
     .services .all-services .service-description .first .vertical-texture, .services .all-services .service-description .second .vertical-texture {
       height: 100%;
       position: absolute;
@@ -590,6 +607,19 @@ body {
   body {
     overflow: auto; }
 
+  .fixed-quote {
+    top: 25px;
+    right: 10px;
+    z-index: 50;
+    position: fixed;
+    display: inline; }
+    .fixed-quote .number {
+      font-size: 14px; }
+    .fixed-quote .whatsapp {
+      margin-top: -4px;
+      margin-right: 5px;
+      width: 15px; }
+
   #main-content {
     margin: 0; }
 
@@ -602,7 +632,8 @@ body {
     top: -20px; }
     .other-button.hide .button-contact {
       display: block;
-      position: relative; }
+      position: relative;
+      opacity: 1 !important; }
 
   .menu-launcher {
     position: fixed; }
