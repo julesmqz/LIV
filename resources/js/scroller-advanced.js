@@ -68,7 +68,7 @@ $(document).ready(function() {
 	}, '-=0.7');
 
 	tl.to(elements[38], 0.1, {
-		opacity: 0.3
+		opacity: 1
 	},'-=0.1');
 
 	tl.to(elements[37], 0.1, {
@@ -78,9 +78,6 @@ $(document).ready(function() {
     tl.to(elements[40], 0.1, {
         display: 'inline'
     });
-
-	
-
 
 	// our services
 
@@ -294,7 +291,7 @@ $(document).ready(function() {
 	}, '-=0.7');
 
 	tl.to(elements[14], 0.7, {
-		opacity: 0.3
+		opacity: 1
 	}, '-=0.7');
 
 	tl.to(elements[20], 0.7, {
@@ -364,6 +361,10 @@ $(document).ready(function() {
 		top: 1000,
 		opacity: 0
 	});
+
+	tl.to(elements[40], 0.1, {
+        display: 'none'
+    });
 
 	/* Contact us */
 

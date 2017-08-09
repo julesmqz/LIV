@@ -137,10 +137,6 @@ body {
   width: 100%;
   text-align: center;
   cursor: pointer;
-  opacity:0.3;
-  &:hover{
-    opacity: 1 !important;
-  }
   span {
     background: url('../imgs/contact-button.png');
     background-size: contain;
@@ -437,8 +433,10 @@ body {
   .opinions {
     top: -1000;
     opacity: 0;
-    background-image: linear-gradient(0deg, rgba(60, 233, 230, 0.00) 0%, rgba(28, 207, 201, 0.40) 100%);
-    padding: 0 70px;
+    background-image: url(../imgs/img-bg-opinions.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 150px 70px 150px;
     position: relative;
     .img-bg-opinions {
       position: absolute;
@@ -510,6 +508,7 @@ body {
         opacity: 1;
         background: none;
         cursor: normal;
+        z-index: $z-index + 2;
         .arrow {
           opacity: 0.5;
           cursor: pointer;
@@ -739,7 +738,7 @@ body {
 }
 
 /* Small Desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px),(max-height: 750px){
   .principal-row {
     .first {
       .txt {
@@ -1025,52 +1024,55 @@ body {
   }
 
   .real-opinions {
-    display: block;
+  	display:block;
     .opinions {
-      top: auto;
-      opacity: 1;
+    	top: auto;
+    	opacity: 1;
+    	padding-top: 70px;
       .carousel {
         .carousel-inner {
           .item {
-            .opinion-text {
-              padding: 84px 10px 0 400px;
-              .actual-opinion {
-                font-size: 20px;
-              }
-              .quote-open {
-                top: 140px;
-                left: 355px;
+            .big {
+              display: none;
+            }
+            .small {
+              display: block;
+              background: white;
+              .author-txt {
+                padding: 0;
               }
             }
-          }
-        }
-        .right, .left {
-          opacity: 1;
-          background: none;
-          cursor: normal;
-          .arrow {
-            cursor: pointer;
-            background: url('../imgs/carousel-control.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-        }
-        .left {
-          .arrow {
-            left: -8%;
-            width: 50px;
-            height: 50px;
-            top: 55%;
-            line-height: 45px;
-          }
-        }
-        .right {
-          .arrow {
-            right: -8%;
-            width: 50px;
-            height: 50px;
-            top: 55%;
-            line-height: 45px;
+            .opinion-text {
+              display: flex;
+              flex-wrap: wrap;
+              width: 100%;
+              height: auto;
+              position: relative;
+              padding: 0 30px;
+              left: auto;
+              bottom: auto;
+              margin-bottom: 20px;
+              .title {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 30px;
+              }
+              .quote-open {
+                position: relative;
+                top: -10px;
+                left: auto;
+                margin-right: 10px;
+              }
+              .opinion-img {
+                position: relative;
+                bottom: -20px;
+              }
+              .inner-div {
+                position: relative;
+                bottom: 0;
+                top: 80%;
+              }
+            }
           }
         }
       }
@@ -1123,6 +1125,19 @@ body {
     }
   }
 
+  .form-title {
+    height: 150px;
+	margin: 25px;
+  }
+
+  .our-services{
+  	height: 150px;
+  }
+
+  .why-us{
+  	height:150px;
+  	margin: 25px;
+  }
 }
 
 /* Only phones */

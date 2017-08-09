@@ -108,10 +108,7 @@ body {
   vertical-align: middle;
   width: 100%;
   text-align: center;
-  cursor: pointer;
-  opacity: 0.3; }
-  .button-contact:hover {
-    opacity: 1 !important; }
+  cursor: pointer; }
   .button-contact span {
     background: url("../imgs/contact-button.png");
     background-size: contain;
@@ -345,8 +342,10 @@ body {
   .real-opinions .opinions {
     top: -1000;
     opacity: 0;
-    background-image: linear-gradient(0deg, rgba(60, 233, 230, 0) 0%, rgba(28, 207, 201, 0.4) 100%);
-    padding: 0 70px;
+    background-image: url(../imgs/img-bg-opinions.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 150px 70px 150px;
     position: relative; }
     .real-opinions .opinions .img-bg-opinions {
       position: absolute;
@@ -404,7 +403,8 @@ body {
       .real-opinions .opinions .carousel .right, .real-opinions .opinions .carousel .left {
         opacity: 1;
         background: none;
-        cursor: normal; }
+        cursor: normal;
+        z-index: 52; }
         .real-opinions .opinions .carousel .right .arrow, .real-opinions .opinions .carousel .left .arrow {
           opacity: 0.5;
           cursor: pointer;
@@ -561,7 +561,7 @@ body {
   .services .all-services .service-description:nth-child(even) .first {
     border-right: 0; } }
 /* Small Desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px), (max-height: 750px) {
   .principal-row .first .txt .title {
     font-size: 100px; }
   .principal-row .first .txt .subtitle {
@@ -741,35 +741,41 @@ body {
     display: block; }
     .real-opinions .opinions {
       top: auto;
-      opacity: 1; }
+      opacity: 1;
+      padding-top: 70px; }
+      .real-opinions .opinions .carousel .carousel-inner .item .big {
+        display: none; }
+      .real-opinions .opinions .carousel .carousel-inner .item .small {
+        display: block;
+        background: white; }
+        .real-opinions .opinions .carousel .carousel-inner .item .small .author-txt {
+          padding: 0; }
       .real-opinions .opinions .carousel .carousel-inner .item .opinion-text {
-        padding: 84px 10px 0 400px; }
-        .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .actual-opinion {
-          font-size: 20px; }
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 0 30px;
+        left: auto;
+        bottom: auto;
+        margin-bottom: 20px; }
+        .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .title {
+          text-align: center;
+          width: 100%;
+          margin-bottom: 30px; }
         .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .quote-open {
-          top: 140px;
-          left: 355px; }
-      .real-opinions .opinions .carousel .right, .real-opinions .opinions .carousel .left {
-        opacity: 1;
-        background: none;
-        cursor: normal; }
-        .real-opinions .opinions .carousel .right .arrow, .real-opinions .opinions .carousel .left .arrow {
-          cursor: pointer;
-          background: url("../imgs/carousel-control.png");
-          background-repeat: no-repeat;
-          background-size: cover; }
-      .real-opinions .opinions .carousel .left .arrow {
-        left: -8%;
-        width: 50px;
-        height: 50px;
-        top: 55%;
-        line-height: 45px; }
-      .real-opinions .opinions .carousel .right .arrow {
-        right: -8%;
-        width: 50px;
-        height: 50px;
-        top: 55%;
-        line-height: 45px; }
+          position: relative;
+          top: -10px;
+          left: auto;
+          margin-right: 10px; }
+        .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .opinion-img {
+          position: relative;
+          bottom: -20px; }
+        .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .inner-div {
+          position: relative;
+          bottom: 0;
+          top: 80%; }
 
   .complete-form .form-body .form-input {
     opacity: 1;
@@ -800,7 +806,18 @@ body {
     .end .animate-final-left {
       left: auto; }
     .end .animate-final-right {
-      left: auto; } }
+      left: auto; }
+
+  .form-title {
+    height: 150px;
+    margin: 25px; }
+
+  .our-services {
+    height: 150px; }
+
+  .why-us {
+    height: 150px;
+    margin: 25px; } }
 /* Only phones */
 @media (max-width: 767px) {
   .principal-row .second {
