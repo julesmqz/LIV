@@ -561,7 +561,7 @@ body {
   .services .all-services .service-description:nth-child(even) .first {
     border-right: 0; } }
 /* Small Desktops */
-@media (min-width: 992px) and (max-width: 1199px), (max-height: 750px) {
+@media (min-width: 992px) and (max-width: 1199px), (min-height: 721px) and (max-height: 750px) {
   .principal-row .first .txt .title {
     font-size: 100px; }
   .principal-row .first .txt .subtitle {
@@ -603,7 +603,7 @@ body {
   .complete-form .form-button {
     top: 50px; } }
 /* Tablets  and phones*/
-@media (max-width: 991px) {
+@media (max-width: 991px), (max-height: 720px) {
   body {
     overflow: auto; }
 
@@ -862,38 +862,40 @@ body {
     position: relative;
     top: -2px; }
 
-  .real-opinions .opinions .carousel .carousel-inner .item .big {
-    display: none; }
-  .real-opinions .opinions .carousel .carousel-inner .item .small {
-    display: block;
-    background: white; }
-    .real-opinions .opinions .carousel .carousel-inner .item .small .author-txt {
-      padding: 0; }
-  .real-opinions .opinions .carousel .carousel-inner .item .opinion-text {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: 0 30px;
-    left: auto;
-    bottom: auto;
-    margin-bottom: 20px; }
-    .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .title {
-      text-align: center;
+  .real-opinions .opinions {
+    padding: 10px 40px; }
+    .real-opinions .opinions .carousel .carousel-inner .item .big {
+      display: none; }
+    .real-opinions .opinions .carousel .carousel-inner .item .small {
+      display: block;
+      background: white; }
+      .real-opinions .opinions .carousel .carousel-inner .item .small .author-txt {
+        padding: 0; }
+    .real-opinions .opinions .carousel .carousel-inner .item .opinion-text {
+      display: flex;
+      flex-wrap: wrap;
       width: 100%;
-      margin-bottom: 30px; }
-    .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .quote-open {
+      height: auto;
       position: relative;
-      top: -10px;
+      padding: 0 30px;
       left: auto;
-      margin-right: 10px; }
-    .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .opinion-img {
-      position: relative;
-      bottom: -20px; }
-    .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .inner-div {
-      position: relative;
-      bottom: 0;
-      top: 80%; } }
+      bottom: auto;
+      margin-bottom: 20px; }
+      .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .title {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px; }
+      .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .quote-open {
+        position: relative;
+        top: -10px;
+        left: auto;
+        margin-right: 10px; }
+      .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .opinion-img {
+        position: relative;
+        bottom: -20px; }
+      .real-opinions .opinions .carousel .carousel-inner .item .opinion-text .inner-div {
+        position: relative;
+        bottom: 0;
+        top: 80%; } }
 
 /*# sourceMappingURL=style.css.map */

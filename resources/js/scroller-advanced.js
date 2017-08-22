@@ -581,7 +581,7 @@ $(document).ready(function() {
 		tl.pause();
 		var d = $(this);
 		var noMenu = d.data('noMenu');
-		if (window.innerWidth > 991) {
+		if (window.innerWidth > 991 && window.innerHeight > 720) {
 			tl.seek(d.data('scroll'));
 			tl.pause();
 		} else {

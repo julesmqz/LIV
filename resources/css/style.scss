@@ -109,8 +109,8 @@ body {
   }
 }
 
-.fixed-quote{
-  display:none;
+.fixed-quote {
+  display: none;
   color: #575858;
   position: absolute;
   right: 39px;
@@ -738,7 +738,7 @@ body {
 }
 
 /* Small Desktops */
-@media (min-width: 992px) and (max-width: 1199px),(max-height: 750px){
+@media (min-width: 992px) and (max-width: 1199px), (min-height: 721px) and (max-height: 750px) {
   .principal-row {
     .first {
       .txt {
@@ -828,16 +828,16 @@ body {
 }
 
 /* Tablets  and phones*/
-@media (max-width: 991px) {
+@media (max-width: 991px),(max-height: 720px) {
   body {
     overflow: auto;
   }
 
-  .fixed-quote{
-    top:25px;
-    right:10px;
+  .fixed-quote {
+    top: 25px;
+    right: 10px;
     z-index: $z-index;
-    position:fixed;
+    position: fixed;
     display: inline;
     .number {
       font-size: 14px;
@@ -1024,11 +1024,11 @@ body {
   }
 
   .real-opinions {
-  	display:block;
+    display: block;
     .opinions {
-    	top: auto;
-    	opacity: 1;
-    	padding-top: 70px;
+      top: auto;
+      opacity: 1;
+      padding-top: 70px;
       .carousel {
         .carousel-inner {
           .item {
@@ -1127,16 +1127,16 @@ body {
 
   .form-title {
     height: 150px;
-	margin: 25px;
+    margin: 25px;
   }
 
-  .our-services{
-  	height: 150px;
+  .our-services {
+    height: 150px;
   }
 
-  .why-us{
-  	height:150px;
-  	margin: 25px;
+  .why-us {
+    height: 150px;
+    margin: 25px;
   }
 }
 
@@ -1218,6 +1218,7 @@ body {
 
   .real-opinions {
     .opinions {
+      padding: 10px 40px;
       .carousel {
         .carousel-inner {
           .item {
