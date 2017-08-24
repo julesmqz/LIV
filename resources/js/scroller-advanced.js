@@ -563,8 +563,10 @@ $(document).ready(function() {
 		if (window.innerWidth <= 991) {
 			if (currentScroll > 150) {
 				$('.menu-icon.animate-menu-hide').css('display', 'none');
+				$('.fixed-quote.animate-quote').css('background-color', 'white');
 			} else {
 				$('.menu-icon.animate-menu-hide').css('display', 'inline');
+				$('.fixed-quote.animate-quote').css('background-color', 'transparent');
 			}
 		}
 
