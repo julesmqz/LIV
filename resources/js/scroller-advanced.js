@@ -484,13 +484,8 @@ $(document).ready(function() {
 		opacity: 1
 	}, '-=0.7');
 
-	// if inner width is tablet go to the very end of the anim
-	// if( window.innerWidth < 991 ){
-	// 	tl.seek(100,false);
-	// }
-
 	// mouse scrolling controls animation
-	if (Modernizr.touch && window.innerWidth > 991) {
+	if (Modernizr.touch && window.innerWidth > 991 && window.innerHeight > 720) {
 
 		// to know when user has finished moving
 		var temp = 0;
@@ -510,15 +505,6 @@ $(document).ready(function() {
 		}, false);
 
 		document.addEventListener('touchend', function(e) {
-			if (timer) {
-				clearTimeout(timer);
-			}
-			temp = Math.floor(Date.now());
-			timer = setTimeout(function() {
-				temp = 0;
-				tl.pause();
-			}, 2000);
-
 			var touchEndY = e.changedTouches[0].clientY;
 			if (touchStartY > touchEndY + 5) {
 				tl.play()
@@ -531,10 +517,10 @@ $(document).ready(function() {
 		$(window).on('mousewheel', function( event ) {
 			var yPos = event.deltaY;
 
-			if (yPos < -5 && window.innerWidth > 991) {
+			if (yPos < -5 && window.innerWidth > 991 && window.innerHeight > 720) {
 				console.log('Animation is playing');
 				tl.play();
-			} else if (yPos > 5 && window.innerWidth > 991) {
+			} else if (yPos > 5 && window.innerWidth > 991 && window.innerHeight > 720) {
 				console.log('Animation is backwards');
 				tl.reverse();
 			}
@@ -556,26 +542,46 @@ $(document).ready(function() {
 		TweenLite.to(menu, 0.5, options);
 	});
 
+    var topOfOthDiv = $("#contact").offset().top;
+
 	/* Hide menu on small screens */
 	$(window).on('scroll resize', function() { // assign scroll event listener
 		//tl.seek(0,false); // always return to 0
 		var currentScroll = $(window).scrollTop(); // get current position
-		if (window.innerWidth <= 991) {
+		//console.log(window.innerHeight);
+		if ((window.innerWidth <= 991 || (window.innerHeight < 721 && window.innerWidth > 991)) && topOfOthDiv > currentScroll) {
+			var special = (window.innerHeight < 721 && window.innerWidth > 991);
+			console.log(currentScroll);
 			if (currentScroll > 150) {
 				$('.menu-icon.animate-menu-hide').css('display', 'none');
-				$('.fixed-quote.animate-quote').css('background-color', 'white');
+				$('.fixed-quote.animate-quote').addClass('bordered');
+				if( special ){
+					$('.quote').hide();
+					$('.fixed-quote').show();
+				}
 			} else {
 				$('.menu-icon.animate-menu-hide').css('display', 'inline');
-				$('.fixed-quote.animate-quote').css('background-color', 'transparent');
+				$('.fixed-quote.animate-quote').removeClass('bordered');
+				if( special ){
+					$('.quote').show();
+					$('.fixed-quote').hide();
+				}
 			}
+		}
+
+		if( topOfOthDiv <= currentScroll ){
+			//hide the phone
+            $('.fixed-quote').hide();
 		}
 
 	});
 
 	/* focus on input */
 	$('.form-input').focusin( function() { // assign scroll event listener
-		tl.seek('contact');
-		tl.pause();
+		if(window.innerWidth > 991 && window.innerHeight > 720){
+            tl.seek('contact');
+            tl.pause();
+		}
 	});
 
 	/* Scroll to certain div */

@@ -20,6 +20,10 @@ body {
   padding: 0;
 }
 
+.bordered {
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
 .layout-wait, .layout-success {
   position: absolute;
   width: 100%;
@@ -344,6 +348,9 @@ body {
   .img-2 {
     bottom: 0;
     right: 0;
+    img{
+      max-height: 550px;
+    }
   }
   [class^="animate"] {
     position: relative;
@@ -792,7 +799,7 @@ body {
       }
       .service-description:nth-child(odd) {
         .second {
-          &.animate-fifth-service-two {
+          &.animate-first-service-two {
             .txt {
               .main-title {
                 font-size: 35px;
@@ -828,14 +835,14 @@ body {
 }
 
 /* Tablets  and phones*/
-@media (max-width: 991px),(max-height: 720px) {
+@media (max-width: 991px), (max-height: 720px) {
   body {
     overflow: auto;
   }
 
   .fixed-quote {
     top: 25px;
-    right: 10px;
+    right: 25px;
     z-index: $z-index;
     position: fixed;
     display: inline;
@@ -1068,9 +1075,7 @@ body {
                 bottom: -20px;
               }
               .inner-div {
-                position: relative;
-                bottom: 0;
-                top: 80%;
+
               }
             }
           }
@@ -1202,6 +1207,12 @@ body {
     .all-services {
       .service-description {
         .first, .second {
+          .txt{
+            .main-title{
+              font-size:35px;
+              line-height:35px;
+            }
+          }
           .vertical-texture {
             display: none;
           }
@@ -1258,11 +1269,165 @@ body {
                 bottom: -20px;
               }
               .inner-div {
-                position: relative;
-                bottom: 0;
-                top: 80%;
+
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .quote {
+    display: none;
+  }
+}
+
+/// Fucking client shit
+@media (min-width: 992px) and (max-height: 720px) {
+  .fixed-quote {
+    display: none;
+  }
+
+  .services {
+    .all-services {
+      .service-description {
+        .first, .second {
+          height:442px;
+          &.animate-first-service-two,&.animate-third-service-two,&.animate-fifth-service-two{
+            padding-left:80px;
+          }
+          &.animate-second-service-one,&.animate-fourth-service-one{
+            padding-right:80px;
+          }
+          .vertical-texture {
+            background: transparent;
+            left:99%;
+
+          }
+          &.hide {
+            display: none !important;
+          }
+          &.animate-second-service-two,&.animate-fourth-service-two {
+            display: block !important;
+            .vertical-texture {
+              background: transparent;
+              left: -18%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .real-opinions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .opinions {
+      padding: 0 50px 70px 50px;
+      .img-bg-opinions {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      .carousel {
+        width: 100%;
+        .carousel-inner {
+          .item {
+            .small {
+              display: none;
+            }
+            .big{
+              display:block;
+            }
+            height: 416px;
+            .opinion-img {
+              z-index: 5;
+              position: absolute;
+              max-height: 100%;
+            }
+            .opinion-text {
+              position: absolute;
+              width: 100%;
+              height: 85%;
+              background-color: white;
+              bottom: 0;
+              left: 0;
+              padding: 47px 150px 0 440px;
+              margin-bottom: 0;
+              .title {
+                font-size: 18px;
+                color: #1ccfc9;
+                text-transform: uppercase;
+              }
+              .actual-opinion {
+                font-size: 30px;
+                color: #575858;
+                line-height: 38px;
+                font-weight: lighter;
+                .quote-close {
+                  transform: rotate(180deg);
+                  margin-left: 10px;
+                  position: relative;
+                  top: -10px;
+                }
+              }
+              .author {
+                font-size: 14px;
+                color: #575858;
+                line-height: 24px;
+                font-weight: bold;
+                margin-bottom: 0;
+              }
+              .extra {
+                font-size: 14px;
+                color: #575858;
+                line-height: 24px;
+                font-weight: lighter;
+                margin-top: 0;
+                width:100%;
+              }
+              .quote-open {
+                position: absolute;
+                top: 120px;
+                left: 395px;
+              }
+            }
+          }
+        }
+        .right, .left {
+          opacity: 1;
+          background: none;
+          cursor: normal;
+          z-index: $z-index + 2;
+          .arrow {
+            opacity: 0.5;
+            cursor: pointer;
+            background: url('../imgs/carousel-control.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+        .left {
+          .arrow {
+            left: -8%;
+            width: 50px;
+            height: 50px;
+            top: 55%;
+            line-height: 45px;
+          }
+        }
+        .right {
+          .arrow {
+            right: -8%;
+            width: 50px;
+            height: 50px;
+            top: 55%;
+            line-height: 45px;
           }
         }
       }

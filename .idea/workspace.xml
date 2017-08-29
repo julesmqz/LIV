@@ -2,8 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efbe8296-9ac8-4cd0-8a1b-3e3d3342003a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/Logo-Liv-blu.png" afterPath="$PROJECT_DIR$/resources/imgs/Logo-Liv-blu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/Logo-Liv-green.png" afterPath="$PROJECT_DIR$/resources/imgs/Logo-Liv-green.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/Logo-Liv-white.png" afterPath="$PROJECT_DIR$/resources/imgs/Logo-Liv-white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/carousel-control.png" afterPath="$PROJECT_DIR$/resources/imgs/carousel-control.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/contact-button-2.png" afterPath="$PROJECT_DIR$/resources/imgs/contact-button-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/contact-button.png" afterPath="$PROJECT_DIR$/resources/imgs/contact-button.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/facebook.png" afterPath="$PROJECT_DIR$/resources/imgs/facebook.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/fifth-service.png" afterPath="$PROJECT_DIR$/resources/imgs/fifth-service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/final-left.png" afterPath="$PROJECT_DIR$/resources/imgs/final-left.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/final-right.png" afterPath="$PROJECT_DIR$/resources/imgs/final-right.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/first-service.png" afterPath="$PROJECT_DIR$/resources/imgs/first-service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/fourth-service.png" afterPath="$PROJECT_DIR$/resources/imgs/fourth-service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/horizontal-texture-1.png" afterPath="$PROJECT_DIR$/resources/imgs/horizontal-texture-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/horizontal-texture-2.png" afterPath="$PROJECT_DIR$/resources/imgs/horizontal-texture-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/img-bg-opinions.png" afterPath="$PROJECT_DIR$/resources/imgs/img-bg-opinions.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/main-1.png" afterPath="$PROJECT_DIR$/resources/imgs/main-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/main.png" afterPath="$PROJECT_DIR$/resources/imgs/main.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/menu-launcher-blu.png" afterPath="$PROJECT_DIR$/resources/imgs/menu-launcher-blu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/menu-launcher.png" afterPath="$PROJECT_DIR$/resources/imgs/menu-launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/opinion-1.png" afterPath="$PROJECT_DIR$/resources/imgs/opinion-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/opinion-2.png" afterPath="$PROJECT_DIR$/resources/imgs/opinion-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/opinion-3.png" afterPath="$PROJECT_DIR$/resources/imgs/opinion-3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/option-1.png" afterPath="$PROJECT_DIR$/resources/imgs/option-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/option-2.png" afterPath="$PROJECT_DIR$/resources/imgs/option-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/option-3.png" afterPath="$PROJECT_DIR$/resources/imgs/option-3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/option-4.png" afterPath="$PROJECT_DIR$/resources/imgs/option-4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/quote.png" afterPath="$PROJECT_DIR$/resources/imgs/quote.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/second-service.png" afterPath="$PROJECT_DIR$/resources/imgs/second-service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/third-service.png" afterPath="$PROJECT_DIR$/resources/imgs/third-service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/vertical-texture-1.png" afterPath="$PROJECT_DIR$/resources/imgs/vertical-texture-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/vertical-texture-2.png" afterPath="$PROJECT_DIR$/resources/imgs/vertical-texture-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/vertical-texture.png" afterPath="$PROJECT_DIR$/resources/imgs/vertical-texture.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/we-love-what-we-do_old.png" afterPath="$PROJECT_DIR$/resources/imgs/we-love-what-we-do_old.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/whatsapp-normal.png" afterPath="$PROJECT_DIR$/resources/imgs/whatsapp-normal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/whatsapp-white-2.png" afterPath="$PROJECT_DIR$/resources/imgs/whatsapp-white-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/whatsapp-white.png" afterPath="$PROJECT_DIR$/resources/imgs/whatsapp-white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/imgs/whatsapp.png" afterPath="$PROJECT_DIR$/resources/imgs/whatsapp.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.jade" afterPath="$PROJECT_DIR$/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style.css" afterPath="$PROJECT_DIR$/resources/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style.css.map" afterPath="$PROJECT_DIR$/resources/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style.scss" afterPath="$PROJECT_DIR$/resources/css/style.scss" />
@@ -19,37 +57,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="830" column="31" lean-forward="false" selection-start-line="830" selection-start-column="31" selection-end-line="830" selection-end-column="31" />
+            <state relative-caret-position="353">
+              <caret line="1214" column="11" lean-forward="false" selection-start-line="1214" selection-start-column="11" selection-end-line="1214" selection-end-column="11" />
               <folding>
-                <marker date="1503377341000" expanded="true" signature="2139:2313" ph="{...}" />
-                <marker date="1503377341000" expanded="true" signature="21391:21393" ph="{...}" />
+                <marker date="1503974707000" expanded="true" signature="2279:2453" ph="{...}" />
+                <marker date="1503974707000" expanded="true" signature="21439:21441" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scroller-advanced.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scroller-advanced.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/scroller-advanced.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="583" column="38" lean-forward="false" selection-start-line="583" selection-start-column="38" selection-end-line="583" selection-end-column="38" />
+            <state relative-caret-position="196">
+              <caret line="551" column="112" lean-forward="false" selection-start-line="551" selection-start-column="112" selection-end-line="551" selection-end-column="112" />
               <folding>
-                <marker date="1503376301000" expanded="true" signature="1740:1753" ph="{...}" />
+                <marker date="1503975269000" expanded="true" signature="1740:1753" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="901" column="0" lean-forward="false" selection-start-line="901" selection-start-column="0" selection-end-line="901" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -57,8 +85,8 @@
       <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="59" />
+            <state relative-caret-position="336">
+              <caret line="88" column="36" lean-forward="false" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -68,13 +96,20 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>real-opinions</find>
       <find>opinions</find>
       <find>opinion-img</find>
       <find>button-con</find>
       <find>14</find>
       <find>quote</find>
       <find>749</find>
+      <find>bordere</find>
+      <find>fixed-quote</find>
+      <find>real-opinions</find>
+      <find>fixe</find>
+      <find>fixed</find>
+      <find>720</find>
+      <find>fifth</find>
+      <find>img-2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,11 +118,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.jade" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
         <option value="$PROJECT_DIR$/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/resources/js/scroller-advanced.js" />
+        <option value="$PROJECT_DIR$/index.jade" />
         <option value="$PROJECT_DIR$/resources/css/style.scss" />
+        <option value="$PROJECT_DIR$/resources/js/scroller-advanced.js" />
       </list>
     </option>
   </component>
@@ -178,6 +213,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imgs" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,12 +368,15 @@
       <workItem from="1503020850767" duration="73000" />
       <workItem from="1503025298265" duration="109000" />
       <workItem from="1503025427231" duration="1528000" />
-      <workItem from="1503375746636" duration="1299000" />
+      <workItem from="1503375746636" duration="1478000" />
+      <workItem from="1503730870153" duration="342000" />
+      <workItem from="1503949895157" duration="5156000" />
+      <workItem from="1503968002345" duration="3304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7005000" />
+    <option name="totallyTimeSpent" value="15986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
@@ -366,17 +408,118 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/scroller-advanced.js</url>
+          <line>426</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/resources/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19695">
+          <caret line="1313" column="3" lean-forward="false" selection-start-line="1313" selection-start-column="3" selection-end-line="1313" selection-end-column="3" />
+          <folding>
+            <marker date="1503974707000" expanded="true" signature="2279:2453" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="21439:21441" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/scroller-advanced.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8580">
+          <caret line="572" column="36" lean-forward="false" selection-start-line="572" selection-start-column="36" selection-end-line="572" selection-end-column="36" />
+          <folding>
+            <marker date="1503975269000" expanded="true" signature="1740:1753" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503974707000" expanded="true" signature="2279:2453" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="21439:21441" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/scroller-advanced.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8745">
+          <caret line="583" column="38" lean-forward="false" selection-start-line="583" selection-start-column="38" selection-end-line="583" selection-end-column="38" />
+          <folding>
+            <marker date="1503975269000" expanded="true" signature="1740:1753" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13515">
+          <caret line="901" column="0" lean-forward="false" selection-start-line="901" selection-start-column="0" selection-end-line="901" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503974707000" expanded="true" signature="2279:2453" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="21439:21441" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/scroller-advanced.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8745">
+          <caret line="583" column="38" lean-forward="false" selection-start-line="583" selection-start-column="38" selection-end-line="583" selection-end-column="38" />
+          <folding>
+            <marker date="1503975269000" expanded="true" signature="1740:1753" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13515">
+          <caret line="901" column="0" lean-forward="false" selection-start-line="901" selection-start-column="0" selection-end-line="901" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12615">
           <caret line="841" column="19" lean-forward="false" selection-start-line="841" selection-start-column="19" selection-end-line="841" selection-end-column="19" />
           <folding>
-            <marker date="1503377341000" expanded="true" signature="2139:2313" ph="{...}" />
-            <marker date="1503377341000" expanded="true" signature="21391:21393" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="2279:2453" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="21439:21441" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -386,7 +529,7 @@
         <state relative-caret-position="7815">
           <caret line="521" column="46" lean-forward="true" selection-start-line="521" selection-start-column="46" selection-end-line="521" selection-end-column="46" />
           <folding>
-            <marker date="1503376301000" expanded="true" signature="1740:1753" ph="{...}" />
+            <marker date="1503975269000" expanded="true" signature="1740:1753" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -403,7 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -412,8 +554,8 @@
         <state relative-caret-position="12615">
           <caret line="841" column="19" lean-forward="false" selection-start-line="841" selection-start-column="19" selection-end-line="841" selection-end-column="19" />
           <folding>
-            <marker date="1503377341000" expanded="true" signature="2139:2313" ph="{...}" />
-            <marker date="1503377341000" expanded="true" signature="21391:21393" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="2279:2453" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="21439:21441" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -431,7 +573,7 @@
         <state relative-caret-position="8445">
           <caret line="563" column="73" lean-forward="false" selection-start-line="563" selection-start-column="73" selection-end-line="563" selection-end-column="73" />
           <folding>
-            <marker date="1503376301000" expanded="true" signature="1740:1753" ph="{...}" />
+            <marker date="1503975269000" expanded="true" signature="1740:1753" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -441,8 +583,8 @@
         <state relative-caret-position="12615">
           <caret line="841" column="19" lean-forward="false" selection-start-line="841" selection-start-column="19" selection-end-line="841" selection-end-column="19" />
           <folding>
-            <marker date="1503377341000" expanded="true" signature="2139:2313" ph="{...}" />
-            <marker date="1503377341000" expanded="true" signature="21391:21393" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="2279:2453" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="21439:21441" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -460,7 +602,7 @@
         <state relative-caret-position="8445">
           <caret line="563" column="73" lean-forward="false" selection-start-line="563" selection-start-column="73" selection-end-line="563" selection-end-column="73" />
           <folding>
-            <marker date="1503376301000" expanded="true" signature="1740:1753" ph="{...}" />
+            <marker date="1503975269000" expanded="true" signature="1740:1753" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -470,8 +612,8 @@
         <state relative-caret-position="12615">
           <caret line="841" column="19" lean-forward="false" selection-start-line="841" selection-start-column="19" selection-end-line="841" selection-end-column="19" />
           <folding>
-            <marker date="1503377341000" expanded="true" signature="2139:2313" ph="{...}" />
-            <marker date="1503377341000" expanded="true" signature="21391:21393" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="2279:2453" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="21439:21441" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -489,7 +631,7 @@
         <state relative-caret-position="8445">
           <caret line="563" column="73" lean-forward="false" selection-start-line="563" selection-start-column="73" selection-end-line="563" selection-end-column="73" />
           <folding>
-            <marker date="1503376301000" expanded="true" signature="1740:1753" ph="{...}" />
+            <marker date="1503975269000" expanded="true" signature="1740:1753" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -499,8 +641,8 @@
         <state relative-caret-position="6255">
           <caret line="417" column="20" lean-forward="true" selection-start-line="417" selection-start-column="20" selection-end-line="417" selection-end-column="20" />
           <folding>
-            <marker date="1503377341000" expanded="true" signature="2139:2313" ph="{...}" />
-            <marker date="1503377341000" expanded="true" signature="21391:21393" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="2279:2453" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="21439:21441" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -524,43 +666,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="13515">
           <caret line="901" column="0" lean-forward="false" selection-start-line="901" selection-start-column="0" selection-end-line="901" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/scroller-advanced.js">
+    <entry file="file://$PROJECT_DIR$/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="583" column="38" lean-forward="false" selection-start-line="583" selection-start-column="38" selection-end-line="583" selection-end-column="38" />
-          <folding>
-            <marker date="1503376301000" expanded="true" signature="1740:1753" ph="{...}" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="88" column="36" lean-forward="false" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="830" column="31" lean-forward="false" selection-start-line="830" selection-start-column="31" selection-end-line="830" selection-end-column="31" />
+        <state relative-caret-position="353">
+          <caret line="1214" column="11" lean-forward="false" selection-start-line="1214" selection-start-column="11" selection-end-line="1214" selection-end-column="11" />
           <folding>
-            <marker date="1503377341000" expanded="true" signature="2139:2313" ph="{...}" />
-            <marker date="1503377341000" expanded="true" signature="21391:21393" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="2279:2453" ph="{...}" />
+            <marker date="1503974707000" expanded="true" signature="21439:21441" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/scroller-advanced.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="551" column="112" lean-forward="false" selection-start-line="551" selection-start-column="112" selection-end-line="551" selection-end-column="112" />
+          <folding>
+            <marker date="1503975269000" expanded="true" signature="1740:1753" ph="{...}" />
           </folding>
         </state>
       </provider>
